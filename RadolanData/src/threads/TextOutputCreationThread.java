@@ -43,7 +43,7 @@ public class TextOutputCreationThread implements Runnable {
 	 * @param area The area used for the query.
 	 */
 	public TextOutputCreationThread(String collection, int minimum, ArrayList<Date> visDateRanges, ArrayList<UserCreatedEntry> entryList, 
-			int count, String path, ArrayList<Date> searchRange, long trailing, long leading, int[] area){
+		int count, String path, ArrayList<Date> searchRange, long trailing, long leading, int[] area){
 		this.collection = collection;
 		this.minimum = minimum;
 		this.visDateRanges = visDateRanges;
@@ -109,13 +109,13 @@ public class TextOutputCreationThread implements Runnable {
 		buffer.append(Math.round(calc * 100000.0) / 100000.0);
 
 		buffer.append("°N\n\tIn polarstereographischen Koordinaten relativ zum Radolan-Raster: (");
-		buffer.append(area[0]);
+		buffer.append(900 - area[3]);
 		buffer.append(", ");
-		buffer.append(area[1]);
+		buffer.append(area[0] + 1);
 		buffer.append(") bis (");
-		buffer.append(area[2]);
+		buffer.append(900 - area[1]);
 		buffer.append(", ");
-		buffer.append(area[3]);
+		buffer.append(area[2] + 1);
 		buffer.append(")\n\tUrsprung vom Radolan-Raster in polarstereographischen Koordinaten bei ");
 		buffer.append(Setup.getXPolar());
 		buffer.append("°E, ");
@@ -171,13 +171,13 @@ public class TextOutputCreationThread implements Runnable {
 				buffer.append(time.toString());
 				for(int x = area[0]; x < area[2]; x++){
 					for(int y = area[1]; y < area[3]; y++){
-						if(values[x][y] >= minimum){
+						if(values[899 - y][899 - x] >= minimum){
 							buffer.append("\n\t\tStelle (");
-							buffer.append(x);
+							buffer.append(x+1);
 							buffer.append(", ");
-							buffer.append(y);
+							buffer.append(900-y);
 							buffer.append(") mit ");
-							buffer.append(((double) values[x][y]) / collectionDivision);
+							buffer.append(((double) values[899-y][899-x]) / collectionDivision);
 							buffer.append(" mm");
 						}
 					}

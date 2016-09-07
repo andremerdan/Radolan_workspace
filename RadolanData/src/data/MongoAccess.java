@@ -152,7 +152,7 @@ public class MongoAccess {
 					int addition = 0;
 					for(int x = area[0]; x < area[2]; x++){
 						for(int y = area[1]; y < area[3]; y++){
-							if(values[x][y] >= minValue) addition++;
+							if(values[899 - y][899 - x] >= minValue) addition++;
 						}
 					}
 					if(addition > 0){
@@ -186,9 +186,7 @@ public class MongoAccess {
 	 * @return A list of user entries matching the given parameters.
 	 */
 	public static ArrayList<UserCreatedEntry> queryUserCreatedEntries(Date start, Date end, int[] area){
-		if(mongo == null){
-			return null;
-		}
+		if(mongo == null) return null;
 		DBCollection coll = db.getCollection("found");
 
 		DBObject query = QueryBuilder.start("t1").greaterThanEquals(start.getTime()).and("t2").lessThanEquals(end.getTime()).get();
@@ -277,7 +275,7 @@ public class MongoAccess {
 		DBCollection coll = db.getCollection("negatives");
 
 		DBObject query = QueryBuilder.start("t1").lessThanEquals(entry.getStartTime()).and("t2").greaterThanEquals(entry.getStartTime()).
-				or(QueryBuilder.start("t1").lessThanEquals(entry.getEndTime()).and("t2").greaterThanEquals(entry.getEndTime()).get()).get();
+		or(QueryBuilder.start("t1").lessThanEquals(entry.getEndTime()).and("t2").greaterThanEquals(entry.getEndTime()).get()).get();
 		DBCursor cursor = coll.find(query);
 
 		while(cursor.hasNext()){
@@ -322,7 +320,7 @@ public class MongoAccess {
 		DBCollection coll = db.getCollection("negatives");
 
 		DBObject query = QueryBuilder.start("t1").lessThanEquals(entry.getStartTime()).and("t2").greaterThanEquals(entry.getStartTime()).
-				or(QueryBuilder.start("t1").lessThanEquals(entry.getEndTime()).and("t2").greaterThanEquals(entry.getEndTime()).get()).get();
+		or(QueryBuilder.start("t1").lessThanEquals(entry.getEndTime()).and("t2").greaterThanEquals(entry.getEndTime()).get()).get();
 		DBCursor cursor = coll.find(query);
 
 		while(cursor.hasNext()){
@@ -332,8 +330,8 @@ public class MongoAccess {
 			int[] eArea = entry.getArea();
 			if(!(eArea[0] > tArea[2]) && !(eArea[1] > tArea[3]) && !(eArea[2] < tArea[0]) && !(eArea[3] < tArea[1])){
 				if((entry.getStartTime().after(testing.getStartTime()) && entry.getStartTime().before(testing.getEndTime()))
-						|| (entry.getEndTime().after(testing.getStartTime()) && entry.getEndTime().before(testing.getEndTime()))
-						|| (entry.getStartTime().before(testing.getStartTime()) && entry.getEndTime().after(testing.getEndTime()))) 
+					|| (entry.getEndTime().after(testing.getStartTime()) && entry.getEndTime().before(testing.getEndTime()))
+					|| (entry.getStartTime().before(testing.getStartTime()) && entry.getEndTime().after(testing.getEndTime()))) 
 					coll.find(cache).remove();
 			}
 		}
