@@ -1,0 +1,72 @@
+package gui;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JWindow;
+import javax.swing.SwingConstants;
+
+import javafx.application.Preloader;
+import javafx.scene.Scene;
+import javafx.scene.control.ProgressBar;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+public class SplashScreen extends Preloader{
+	
+	static ProgressBar bar;
+	Stage stage;
+	
+	public static Scene createPreloaderScene(){
+		bar = new ProgressBar();
+		BorderPane p = new BorderPane();
+		p.setCenter(bar);
+		return new Scene(p,300,150);
+	}
+	
+	@Override
+	public void start(Stage arg0) throws Exception {
+		this.stage = stage;
+		stage.setScene(createPreloaderScene());
+		stage.show();
+	}
+	
+	@Override
+	public void handleStateChangeNotification(StateChangeNotification scn){
+		if(scn.getType() == StateChangeNotification.Type.BEFORE_START){
+			stage.hide();
+		}
+	}
+	
+	
+	
+	// Generated Splashscreen
+	public static Integer splashScreenThread() {
+		
+//		JWindow window = new JWindow();
+//		try {
+//			window.getContentPane().add(
+//			    new JLabel("", new ImageIcon(new URL("http://docs.oracle.com/javase/tutorial/uiswing/examples/misc/SplashDemoProject/src/misc/images/splash.gif")), SwingConstants.CENTER));
+//		} catch (MalformedURLException e1) {
+//			e1.printStackTrace();
+//		}
+//		window.setBounds(500, 150, 300, 200);
+//		window.setVisible(true);
+//		
+//
+//		try {
+//		    Thread.sleep(5000);
+//		} catch (InterruptedException e) {
+//		    e.printStackTrace();
+//		}
+//		
+//		window.setVisible(false);
+//		window.dispose();
+		return null;
+	}
+
+
+
+}

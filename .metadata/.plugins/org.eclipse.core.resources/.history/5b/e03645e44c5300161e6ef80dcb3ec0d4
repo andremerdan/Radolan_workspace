@@ -1,0 +1,82 @@
+package gui;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTabbedPane;
+
+import connection.WebApi;
+import data.MongoAccess;
+
+import java.awt.BorderLayout;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.io.IOException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+ * 
+ * @author Patrick Allan Blair
+ *
+ */
+public class Hauptfenster extends JFrame {
+
+	private static final long serialVersionUID = -7503647960732616207L;
+	private static JTabbedPane tabbedPane;
+	private static ExecutorService executor = Executors.newSingleThreadExecutor();
+	private WebApi web;
+
+	public Hauptfenster() {
+		web = new WebApi();
+		try {
+			web.startServer();
+		} catch (IllegalArgumentException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+		System.out.println("jier");
+		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
+		this.addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e){
+				int i=JOptionPane.showConfirmDialog(null, "Programm beenden?");
+				if(i==0){
+					web.stopServer();
+					if(Setup.getShutdownMongo()) MongoAccess.stopMongoService(Setup.getMongoDPath());
+					executor.shutdown();
+					System.exit(0);
+				}
+			}
+		});
+		tabbedPane = new JTabbedPane(JTabbedPane.TOP);
+		getContentPane().add(tabbedPane, BorderLayout.CENTER);
+
+		Setup setup = new Setup();
+		tabbedPane.addTab("Einstellungen", null, setup, null);
+
+		AreaSelect area = new AreaSelect();
+		tabbedPane.addTab("Sucheinschr�nkung: Bereich", null, area, null);
+
+		SpiralCreator select = new SpiralCreator();
+		tabbedPane.addTab("Kreisdarstellung", null, select, null);
+
+		VisCreator creator = new VisCreator();
+		tabbedPane.addTab("Visualisierung", null, creator, null);
+
+		GifCreator gif = new GifCreator();
+		tabbedPane.addTab("Animation Erstellen", null, gif, null);
+
+		this.pack();
+		this.setVisible(true);
+	}
+
+	/**
+	 * Gives runnable to the executor, which will sequentially start them in a thread.
+	 * 
+	 * @param run The runnable to be given to the executor.
+	 */
+	public static void feedExecutor(Runnable run){
+		executor.execute(run);
+	}
+}

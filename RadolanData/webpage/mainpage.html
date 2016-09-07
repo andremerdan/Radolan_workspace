@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Radolan Daten Visualisierung</title>
+
+	<link rel="stylesheet" href="css/timeline.css">
+	<link rel="stylesheet" href="css/general.css">
+	
+	<script type="text/javascript" src="js/timeline.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/SiteReady.js"></script>
+</head>
+<body>
+	<div id="MainArea">
+	<h1>Radolan</h1>
+		<div id="karten" ></div>
+		<br/>
+			
+		<div id="mapButtons">
+			<button id="startAnimation" type="button">Animation Start</button>
+			<button id="stopAnimation" type="button">Animation Stop</button>
+			<button id="markAsNegativ" type="button">Zeitbereich als überprüft markieren</button>
+			<button id="markAsPotential" type="button">Zeitbereich freigeben</button>
+			<br/>
+		</div>
+		<input type="radio" name="radioButton" id="move"/>Karte Vershieben 
+		<input type="checkbox" name="checkbox" id="drawShownEntry"/>Gewählten Eintrag anzeigen 
+		<input type="checkbox" name="checkbox" id="drawCurrentEntry"/>Aktuell bearbeiteten Eintrag anzeigen<br/>
+		<input type="radio" name="radioButton" id="ValueQuery"/>Wert Abfragen
+		<br/>
+		<div id="mapValQuery">
+			Wert an Stelle x: <input type="text" id="queriedX" />
+			, y: <input type="text" id="queriedY" /> 
+			ist <span id="queriedValue"></span> mm 
+			<br/>
+		</div>
+		<button id="queryValueButton" type="button">Wert Abfragen</button>
+		<br/>
+		
+		<hr/>
+		<div id="entryForm">
+			<span class="formTextBegin">Verfügbare Einträge:</span>
+			<select id="entryFormSelect"></select>
+			<button id="createEntryForm">Neuer Eintrag</button>
+			<br/>
+			
+			<div class="formLine">
+				<span class="formTextBegin">Bezeichnung:</span>
+				<input type="text" id="formEntryName" />
+				<br/>
+			</div>
+			<div class="formLine">
+				<span class="formTextBegin">Beginn:</span>
+				<span id="formTimeStart"></span>
+				<button class="timeChangeBack" id="formTimeStartMinus">Zurück</button>
+				<button id="formTimeStartPlus">Vor</button>
+				<br/>
+			</div>
+			<div class="formLine">
+				<span class="formTextBegin">Ende:</span><span id="formTimeStop"></span>
+				<button class="timeChangeBack" id="formTimeStopMinus">Zurück</button>
+				<button id="formTimeStopPlus">Vor</button>
+				<br/>
+			</div>
+			<div class="formLine">
+				<span class="formTextBegin">Größter Wert:</span>
+				<input type="text" id="formMaxVal" />
+				<br/>
+			</div>
+			<div class="formLine">
+				<span class="formTextBegin">Windrichtung in Grad:</span>
+				<span id="formWindDegrees"></span>
+				<br/>
+			</div>
+			<div class="formLine">
+				<input type="radio" name="radioButton" id="formWindDirection"/>Windrichtung einzeichnen<br/>
+			</div>
+			<div class="formLine">
+				<input type="radio" name="radioButton" id="formRainCenter"/>Zentrum einzeichnen
+				<button id="formRainDelete">Aktuelle Zentren Löschen</button>
+				<br/>
+			</div>
+			<button id="entryformSend">Versenden</button>
+			<button id="deleteformSend">Löschen</button>
+		</div>
+		<hr/>
+		<div id="visualization"></div>
+	</div>
+</body>
+</html>

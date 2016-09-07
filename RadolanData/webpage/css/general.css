@@ -1,0 +1,50 @@
+.formTextBegin {
+	width: 150px;
+	margin-right: 5px;
+	float: left;
+	display: table-cell;
+	text-align: right;
+}
+
+.formLine {
+	margin-top: 10px;
+}
+
+#entryForm {
+	font-size: 15px;
+	display: table-cell;
+}
+
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#createEntryForm {
+	margin-left: 10px;
+}
+
+#formRainDelete {
+	margin-left: 5px;
+}
+
+#entryformSend, #deleteformSend {
+	font-size: 20px;
+	margin-top: 30px;
+	margin-left: 5px;
+	clear: both;
+}
+
+.timeChangeBack {
+	margin-left: 10px;
+	margin-right: 2px;
+}
+
+#mapButtons {
+	margin-bottom: 5px;
+}
+
+#mapValQuery {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
