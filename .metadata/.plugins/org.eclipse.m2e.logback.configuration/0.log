@@ -1931,3 +1931,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration SplashScreen refere
 2016-09-07 13:09:26,868 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
 2016-09-07 13:09:26,872 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-09-07 13:09:26,873 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:34:48,335 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:34:48,352 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:34:48,359 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:34:48,359 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
