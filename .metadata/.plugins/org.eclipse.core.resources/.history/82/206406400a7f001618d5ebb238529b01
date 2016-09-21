@@ -32,7 +32,6 @@ import javax.swing.event.DocumentListener;
 import data.DataRead;
 import data.MongoAccess;
 import threads.FileReadThread;
-import java.awt.SystemColor;
 
 /**
  * 
@@ -180,7 +179,7 @@ public class Setup extends JPanel{
 		gbc_btnPathSpeichern.gridy = 2;
 		add(btnPathSpeichern, gbc_btnPathSpeichern);
 		
-		btnPathSpeichern.setToolTipText("Speichert den aktuellen Pfad der MongoDB Datenbank");
+		btnPathSpeichern.setToolTipText("Speichert den aktuellen Pfad der MongoDB Datenbank ");
 
 		btnPathSpeichern.addActionListener(new ActionListener() {
 
@@ -189,25 +188,19 @@ public class Setup extends JPanel{
 				list.add(mongodPath.getText());
 				DataRead.writeXML(list, "options\\SavedPaths.xml");
 				btnPathSpeichern.setBackground(Color.green);
-				
 			}
 		});
 		
 		mongodPath.getDocument().addDocumentListener(new DocumentListener() {
 			
-			ArrayList<String> list = DataRead.readXML("options\\SavedPaths.xml");
-//		
+				ArrayList<String> list = DataRead.readXML("options\\SavedPaths.xml");
+				
 			
+
 			@Override
 			public void changedUpdate(DocumentEvent e) {
-				if (list.get(0) == mongodPath.getText()) {
-					System.out.println("1 " + list.get(0));
-					System.out.println("2 " + mongodPath.getText());
+				if (list.get(0) != mongodPath.getText()) {
 					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
-					System.out.println("3 " + list.get(0));
-					System.out.println("2" + mongodPath.getText());
 				}
 			}
 
@@ -215,18 +208,13 @@ public class Setup extends JPanel{
 			public void insertUpdate(DocumentEvent e) {
 				if (list.get(0) != mongodPath.getText()) {
 					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
 				}
-				
 			}
 
 			@Override
 			public void removeUpdate(DocumentEvent e) {
 				if (list.get(0) != mongodPath.getText()) {
 					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
 				}
 			}
 		});
