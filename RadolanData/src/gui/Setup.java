@@ -303,7 +303,7 @@ public class Setup extends JPanel{
 
 		verbinden = new JButton("Verbinden");
 		GridBagConstraints gbc_btnVerbinden = new GridBagConstraints();
-		gbc_btnVerbinden.gridwidth = 3;
+//		gbc_btnVerbinden.gridwidth = 3;
 		gbc_btnVerbinden.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnVerbinden.insets = new Insets(0, 0, 5, 5);
 		gbc_btnVerbinden.gridx = 9;

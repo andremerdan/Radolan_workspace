@@ -14,17 +14,18 @@
 	<div id="MainArea">
 	<h1>Radolan</h1>
 		<div id="karten" ></div>
-		<br/>
+
+		<img alt="legende" src="img/colorlegend.jpeg">
 			
 		<div id="mapButtons">
 			<button id="startAnimation" type="button">Animation Start</button>
 			<button id="stopAnimation" type="button">Animation Stop</button>
-			<button id="markAsNegativ" type="button">Zeitbereich als Ã¼berprÃ¼ft markieren</button>
+			<button id="markAsNegativ" type="button">Zeitbereich als überprüft	 markieren</button>
 			<button id="markAsPotential" type="button">Zeitbereich freigeben</button>
 			<br/>
 		</div>
 		<input type="radio" name="radioButton" id="move"/>Karte Vershieben 
-		<input type="checkbox" name="checkbox" id="drawShownEntry"/>GewÃ¤hlten Eintrag anzeigen 
+		<input type="checkbox" name="checkbox" id="drawShownEntry"/>Gewählten Eintrag anzeigen 
 		<input type="checkbox" name="checkbox" id="drawCurrentEntry"/>Aktuell bearbeiteten Eintrag anzeigen<br/>
 		<input type="radio" name="radioButton" id="ValueQuery"/>Wert Abfragen
 		<br/>
@@ -39,7 +40,7 @@
 		
 		<hr/>
 		<div id="entryForm">
-			<span class="formTextBegin">VerfÃ¼gbare EintrÃ¤ge:</span>
+			<span class="formTextBegin">Verfügbare Einträge:</span>
 			<select id="entryFormSelect"></select>
 			<button id="createEntryForm">Neuer Eintrag</button>
 			<br/>
@@ -52,18 +53,18 @@
 			<div class="formLine">
 				<span class="formTextBegin">Beginn:</span>
 				<span id="formTimeStart"></span>
-				<button class="timeChangeBack" id="formTimeStartMinus">ZurÃ¼ck</button>
+				<button class="timeChangeBack" id="formTimeStartMinus">Zurück</button>
 				<button id="formTimeStartPlus">Vor</button>
 				<br/>
 			</div>
 			<div class="formLine">
 				<span class="formTextBegin">Ende:</span><span id="formTimeStop"></span>
-				<button class="timeChangeBack" id="formTimeStopMinus">ZurÃ¼ck</button>
+				<button class="timeChangeBack" id="formTimeStopMinus">Zurück</button>
 				<button id="formTimeStopPlus">Vor</button>
 				<br/>
 			</div>
 			<div class="formLine">
-				<span class="formTextBegin">GrÃ¶ÃŸter Wert:</span>
+				<span class="formTextBegin">Größter Wert:</span>
 				<input type="text" id="formMaxVal" />
 				<br/>
 			</div>
@@ -81,7 +82,7 @@
 				<br/>
 			</div>
 			<button id="entryformSend">Versenden</button>
-			<button id="deleteformSend">LÃ¶schen</button>
+			<button id="deleteformSend">Löschen</button>
 		</div>
 		<hr/>
 		<div id="visualization"></div>
