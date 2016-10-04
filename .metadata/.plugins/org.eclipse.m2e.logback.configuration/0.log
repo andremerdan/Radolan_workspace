@@ -1931,3 +1931,67 @@ org.eclipse.core.runtime.CoreException: Launch configuration SplashScreen refere
 2016-09-07 13:09:26,868 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
 2016-09-07 13:09:26,872 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-09-07 13:09:26,873 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:34:48,335 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:34:48,352 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:34:48,359 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:34:48,359 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:40:03,309 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:40:03,314 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:40:03,317 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:40:03,318 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:40:59,832 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:40:59,841 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:40:59,843 [Worker-36] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:40:59,844 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:47:10,745 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:47:10,746 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:47:10,748 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:47:10,752 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 08:59:56,154 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:59:56,159 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 08:59:56,161 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 08:59:56,162 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 09:09:06,699 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:09:06,711 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 09:09:06,718 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:09:06,719 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 09:14:49,952 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:14:49,956 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 09:14:49,963 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:14:49,965 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 09:28:31,956 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:28:31,966 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 09:28:31,970 [Worker-76] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:28:31,970 [Worker-76] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 09:28:53,131 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:28:53,138 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 09:28:53,140 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 09:28:53,141 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:06:04,256 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:06:04,261 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:06:04,273 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:06:04,274 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:11:55,287 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:11:55,293 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:11:55,305 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:11:55,306 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:14:28,799 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:14:28,806 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:14:28,810 [Worker-91] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:14:28,811 [Worker-91] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:15:26,886 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:15:26,897 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:15:26,903 [Worker-92] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:15:26,903 [Worker-92] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:16:20,641 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:16:20,647 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:16:20,649 [Worker-107] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:16:20,650 [Worker-107] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 10:19:36,618 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:19:36,623 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 10:19:36,625 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 10:19:36,626 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources
+2016-09-20 11:55:15,337 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 11:55:15,355 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/main/resources
+2016-09-20 11:55:15,362 [Worker-143] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-09-20 11:55:15,363 [Worker-143] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/andremerdan/Documents/Radolan/workspace/RadolanData/src/test/resources

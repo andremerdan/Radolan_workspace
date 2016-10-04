@@ -179,7 +179,6 @@ public class AreaSelect extends JPanel{
 		add(scrollPane, gbc_bundeslandList);
 			
 		bundesList.addListSelectionListener(new ListSelectionListener() {
-			String[] bundesland = {"Baden-Württemberg", "Bayern", "Berlin", "Brandenburg", "Bremen", "Hamburg", "Hessen", "Mecklenburg-Vorpommern", "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz" ,"Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen"};
 
 			@Override
 			public void valueChanged(ListSelectionEvent e) {
@@ -282,6 +281,10 @@ public class AreaSelect extends JPanel{
 					break;
 
 				default:
+					area[0] = 0;
+					area[1] = 0;
+					area[2] = 900;
+					area[3] = 900;
 					break;
 				}
 			}
