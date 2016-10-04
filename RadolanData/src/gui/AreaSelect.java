@@ -300,6 +300,8 @@ public class AreaSelect extends JPanel{
 		gbc_btnBereichLaden.gridy = 11;
 		add(btnBereichLaden, gbc_btnBereichLaden);
 		
+		btnBereichLaden.setToolTipText("Bereich aus XML-Datei laden");
+		
 		btnBereichLaden.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
@@ -323,6 +325,8 @@ public class AreaSelect extends JPanel{
 		gbc_btnBereichSpeichern.gridy = 11;
 		add(btnBereichSpeichern, gbc_btnBereichSpeichern);
 		
+		btnBereichSpeichern.setToolTipText("Bereich abspeichern");
+		
 		btnBereichSpeichern.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
@@ -332,6 +336,7 @@ public class AreaSelect extends JPanel{
 				list.add(area3.getText());
 				list.add(area4.getText());
 				DataRead.writeXML(list, "options\\SavedAreaText.xml");
+				btnBereichSpeichern.setBackground(Color.green);
 			}
 		});
 		
@@ -343,8 +348,11 @@ public class AreaSelect extends JPanel{
 		gbc_tglbtnBereichEinzeichnen.insets = new Insets(0, 0, 5, 5);
 		gbc_tglbtnBereichEinzeichnen.gridx = 2;
 		gbc_tglbtnBereichEinzeichnen.gridy = 11;
+		
 		add(tglbtnBereichEinzeichnen, gbc_tglbtnBereichEinzeichnen);
-
+		
+		tglbtnBereichEinzeichnen.setToolTipText("Bereich einzeichnen");
+		
 		areaToText();
 
 		drawPanel.addMouseListener(new MouseListener() {
