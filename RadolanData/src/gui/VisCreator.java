@@ -531,8 +531,12 @@ public class VisCreator extends JPanel{
 				int minimum = 4000;
 				String collection = datasetSelectVisualization.getSelectedItem().toString();
 				try {
-					if(collection.equals("rw")) minimum = (int) (Double.valueOf(minimumSet.getText()) * 10);
-					else minimum = (int) (Double.valueOf(minimumSet.getText()) * 100);
+					if(collection.equals("rw")){
+						minimum = (int) (Double.valueOf(minimumSet.getText()) * 10);
+					}
+					else{
+						minimum = (int) (Double.valueOf(minimumSet.getText()) * 100);
+					}
 				} catch (NumberFormatException  e) {
 					System.out.println("Konvertierung auf Integer fehlgeschlagen");
 				}

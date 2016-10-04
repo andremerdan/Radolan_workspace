@@ -33,6 +33,8 @@ public class VisPreparation {
 
 	private static String PATH = "webpage\\dataImages";
 
+	static int min = 100;
+	static int max = 1;
 	/**
 	 * Pre-processes the given entry for the chosen glyph type and calls corresponding methods for the actual creation. 
 	 * 
@@ -73,7 +75,7 @@ public class VisPreparation {
 	private static void createCrossGlyph(int direction, int maxVal, int minutes, String path){
 		BufferedImage bi = new BufferedImage(65, 65, BufferedImage.TYPE_INT_ARGB);
 
-		System.out.println("Beginning image draw");
+		System.out.println("Beginning image draw - createCrossGlyph");
 
 		Graphics g = bi.getGraphics();
 		g.setColor(new Color(255, 255, 255, 255));
@@ -111,7 +113,7 @@ public class VisPreparation {
 	private static void createArrowGlyph(int length, int extent, int direction, String path){
 		BufferedImage bi = new BufferedImage(65, 65, BufferedImage.TYPE_INT_ARGB);
 
-		System.out.println("Beginning image draw");
+		System.out.println("Beginning image draw - createArrowGlyph");
 
 		Graphics g = bi.getGraphics();
 		g.setColor(new Color(255, 255, 255, 255));
@@ -160,7 +162,7 @@ public class VisPreparation {
 	private static void createDiamondGlyph(int length, int extent, String path){
 		BufferedImage bi = new BufferedImage(65, 65, BufferedImage.TYPE_INT_ARGB);
 
-		System.out.println("Beginning image draw");
+		System.out.println("Beginning image draw - createDiamondGlyph");
 
 		Graphics g = bi.getGraphics();
 		g.setColor(new Color(255, 255, 255, 255));
@@ -201,14 +203,17 @@ public class VisPreparation {
 	private static void createPNG(String path, int[][] values, int[] area, int minValue){
 		int w = area[2] - area[0];
 		int h = area[3] - area[1];
+		
+		
 		if(w <= 0 || h <= 0) return;
 		BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 
-		System.out.println("Beginning image draw");
+		System.out.println("Beginning image draw - createPNG");
 
 		Graphics g = bi.getGraphics();
 		g.setColor(new Color(Color.TRANSLUCENT));
 		g.drawRect(0, 0, w, h);
+		// Color around the core of cloud
 		g.setColor(Color.LIGHT_GRAY);
 
 		for(int x = area[0]; x < area[2]; x++){
@@ -222,7 +227,22 @@ public class VisPreparation {
 				if(values[x][y] >= minValue){
 					value = (int) ((100 * (double) values[x][y]) / 4096);
 					if(value > 0 && value <= 4096){
-						g.setColor(new Color(100 - value, 100 - value, 200 - value));
+						
+						// Color of Clouds
+						
+						if(values[x][y] > 300){
+							g.setColor(Color.RED);
+						}else if(values[x][y] > 200){
+							g.setColor(Color.YELLOW);
+						}else if(values[x][y] > 100){
+							g.setColor(Color.GREEN);
+						}else if(values[x][y] > 50){
+							g.setColor(Color.BLUE);
+						}else if(values[x][y] > 0){
+							g.setColor(Color.PINK);
+						}
+						
+//						g.setColor(new Color(100 - value, 100 - value, 200 - value));
 						g.fillRect(900 - y - area[1], 900 - x - area[0], 1, 1);
 					}
 				}
@@ -236,6 +256,8 @@ public class VisPreparation {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+//		System.out.println("min: " + min + "max: " + max);
 	}
 
 	/**
