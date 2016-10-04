@@ -318,7 +318,7 @@ public class Setup extends JPanel{
 					if(chckbxMongodbMitStarten.isSelected() && success){
 						verbinden.setText("Trennen");
 					} else if(success){
-						verbinden.setText("�ndern");
+						verbinden.setText("�ndern");	
 					}
 				} else if(verbinden.getText().equals("Trennen")){
 					MongoAccess.stopMongoService(Setup.getMongoDPath());
