@@ -1,5 +1,6 @@
 package data;
 
+
 import gui.Setup;
 
 import java.io.File;
@@ -9,41 +10,65 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
+
+
+
 import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 import com.mongodb.Mongo;
+
 import com.mongodb.QueryBuilder;
 import com.mongodb.util.JSON;
 
+
+
+
+
+
 import connection.GsonHelper;
+
 
 /**
  * This class contains all operations relating to the database.
+
+
+
  * 
  * @author Patrick Allan Blair
  *
  */
 public class MongoAccess {
 
+
 	private static Mongo mongo;
+
 	private static DB db;
+
+
 
 	/**
 	 * Creates (optionally) and connects to the database.
+
 	 * 
 	 * @param mongod The path to the mongod.exe file
+
 	 * @param database The path to the used database.
 	 * @param startMongo Whether this should start the database or just connect to an already existing one.
 	 * 
 	 * @return True if a connection was established.
 	 */
 	public static boolean startMongo(String mongod, String database, boolean startMongo){
+
 		if(!startMongo) return createMongoAccess();
+
 		if(startMongoService(mongod, database)){
+
+
 			return createMongoAccess();
+
 		}
 		else return false;
 	}
@@ -57,9 +82,11 @@ public class MongoAccess {
 	 * @return True if successful.
 	 */
 	private static boolean startMongoService(String mongod, String database){
+
 		Process process;
 		try {
 			process = Runtime.getRuntime().exec(mongod + "\\mongod.exe --dbpath " + database);
+
 			while(process.getInputStream().available() <= 0);
 			return true;
 
@@ -71,15 +98,29 @@ public class MongoAccess {
 
 	/**
 	 * Connects to the database.
+
 	 * 
 	 * @return True if successful.
 	 */
 	private static boolean createMongoAccess(){
+
 		try {
 			if(mongo == null) mongo  = new Mongo();
+
+
+
+
+
+
+
+
+
 		} catch (UnknownHostException e) {
+
 			System.out.println("Datenbank konnte nicht gefunden werden.");
 			e.printStackTrace();
+
+
 			return false;
 		}
 
@@ -88,11 +129,14 @@ public class MongoAccess {
 		File file = new File(Setup.getDatabasePath() + "\\RadolanTextFiles");
 		file.mkdirs();
 		
+
 		return true;
 	}
 
+
 	/**
 	 * Stops the database.
+
 	 * 
 	 * @param mongod The path to the used database.
 	 */
@@ -104,12 +148,38 @@ public class MongoAccess {
 		} catch (Exception e){
 		} finally{
 			mongo.close();
+
 			db = null;
+
 			mongo = null;
+
 		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	}
 
+
+
+
+
 	/**
+
+
+
 	 * Searches through the database for dates matching the given paramaters.
 	 * 
 	 * @param collection The collection(rw, ry) to be used.
@@ -120,11 +190,25 @@ public class MongoAccess {
 	 * @param dates A list that is to be filled with dates matching the given search parameters.
 	 * @return The number of found dates matching the parameters.
 	 */
+
 	public static int searchBetween(String collection, Date fromDate, Date toDate, int minValue, int[] area, ArrayList<Date> dates){
 		if(mongo == null || area[2] > 900 || area[0] < 0 || area[1] < 0 || area[3] > 900) return 0;
 
 		long beginning = fromDate.getTime();
+
+
+
+
+
+
+
 		long target = toDate.getTime();
+
+
+
+
+
+
 		DBObject query = QueryBuilder.start("t").greaterThanEquals(beginning).and("t").lessThanEquals(target).and("v").greaterThanEquals(minValue).get();
 
 		int subID = minValue - (minValue % 100);
@@ -155,6 +239,7 @@ public class MongoAccess {
 							if(values[899 - y][899 - x] >= minValue) addition++;
 						}
 					}
+
 					if(addition > 0){
 						dates.add(entry);
 						count = count + addition;
@@ -163,13 +248,23 @@ public class MongoAccess {
 				cursor.close();
 			}
 		}
+
 		return count;
+
 	}
+
 
 	/**
 	 * Adds a user created entry to the database.
 	 * @param entry The entry to be added-
+
+
+
 	 */
+
+
+
+
 	public static void addUserCreatedEntry(UserCreatedEntry entry){
 		if(mongo == null) return;
 		DBCollection coll = db.getCollection("found");
@@ -180,6 +275,7 @@ public class MongoAccess {
 	/**
 	 * Searches through user created entries for those matching the given parameters.
 	 * 
+
 	 * @param start The starting date for the search.
 	 * @param end The ending date for the search.
 	 * @param area The area for the search.
@@ -201,7 +297,35 @@ public class MongoAccess {
 				if(c[i] >= area[0] && c[i] <= area[2] && c[i+1] >= area[1] && c[i+1] <= area[3]){
 					foundEntries.add((UserCreatedEntry) GsonHelper.deserialize(cursor.curr().toString(), UserCreatedEntry.class));
 					break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				}
+
 			}
 		}
 		cursor.close();
@@ -304,8 +428,14 @@ public class MongoAccess {
 					if(entry.getEndTime().before(testing.getEndTime())) entry.setEndTime(testing.getEndTime());
 					coll.find(cache).remove();
 				}
+
 			}
+
+
+
 		}
+
+
 
 		DBObject dbObject = (DBObject) JSON.parse(GsonHelper.serialize(entry));
 		coll.insert(dbObject);
@@ -314,10 +444,27 @@ public class MongoAccess {
 
 	/**
 	 * 
+
 	 */
+
 	public static void deleteNegativeEntry(NegativeEntry entry){
+
+
+
+
+
 		if(mongo == null) return;
+
 		DBCollection coll = db.getCollection("negatives");
+
+
+
+
+
+
+
+
+
 
 		DBObject query = QueryBuilder.start("t1").lessThanEquals(entry.getStartTime()).and("t2").greaterThanEquals(entry.getStartTime()).
 		or(QueryBuilder.start("t1").lessThanEquals(entry.getEndTime()).and("t2").greaterThanEquals(entry.getEndTime()).get()).get();
@@ -376,7 +523,10 @@ public class MongoAccess {
 						}
 					}
 				}
+
 			}
+
+
 		}
 		cursor.close();
 		return found;

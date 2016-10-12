@@ -1,8 +1,11 @@
 package threads;
 
+import gui.Hauptfenster;
 import gui.Setup;
+import gui.Tablesearch;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -28,6 +31,12 @@ public class TextOutputCreationThread implements Runnable {
 	private long leading;
 	private int[] area;
 	private int collectionDivision = 10;
+	
+	// JTable Legend
+	public static String[] columnNames = {
+			"Area", "Date", "Value in mm"
+	};
+	public static double[][] data = {};
 
 	/**
 	 * 
@@ -54,10 +63,15 @@ public class TextOutputCreationThread implements Runnable {
 		this.trailing = trailing;
 		this.leading = leading;
 		this.area = area;
-		if(collection.equals("ry")) collectionDivision = 100;
+		if(collection.equals("ry")){
+			collectionDivision = 100;
+		}
 	}
 
-	public void run() {
+	public void run() { 
+		
+//		data = new Object[900][900];
+		data = new double[900][900]; 
 		StringBuffer buffer = new StringBuffer();
 
 		buffer.append("Suchergebnisse für ");
@@ -65,7 +79,9 @@ public class TextOutputCreationThread implements Runnable {
 		buffer.append("\n\n-----------------\n\n");
 
 		buffer.append("Verwendeter Datensatz: ");
-		if(collection.equals("rw")) buffer.append("Stündliche Daten\n");
+		if(collection.equals("rw")){
+			buffer.append("Stündliche Daten\n");
+		}
 		else buffer.append("Fünf-Minuten Daten\n");
 
 		buffer.append("Suche eingeschränkt auf Zeit: ");
@@ -146,7 +162,9 @@ public class TextOutputCreationThread implements Runnable {
 		}
 
 		long addition = 300000;
-		if(collection.equals("rw")) addition = 3600000;
+		if(collection.equals("rw")){
+			addition = 3600000;
+		}
 
 		buffer.append("\n\n-----------------\n\nGefundene Ereignisse\n");
 		
@@ -173,10 +191,14 @@ public class TextOutputCreationThread implements Runnable {
 					for(int y = area[1]; y < area[3]; y++){
 						if(values[899 - y][899 - x] >= minimum){
 							buffer.append("\n\t\tStelle (");
+							
+							data[x][y] = x+1;
 							buffer.append(x+1);
 							buffer.append(", ");
+							data[x][y] = 900-y;
 							buffer.append(900-y);
 							buffer.append(") mit ");
+							data[x][y] = ((double) values[899-y][899-x]) / collectionDivision;
 							buffer.append(((double) values[899-y][899-x]) / collectionDivision);
 							buffer.append(" mm");
 						}
@@ -184,6 +206,19 @@ public class TextOutputCreationThread implements Runnable {
 				}
 			}
 		}
+		
+		for (int i = 0; i < data.length; i++) {
+			for (int j = 0; j < data.length; j++) {
+				System.out.println("Data["+i+"]["+j+"] = " + Arrays.toString(data));
+			}
+		}
+		
+//		Tablesearch.setTable();
+//		System.out.println();
+		Hauptfenster.frame.revalidate();
+		Hauptfenster.frame.repaint();
+
+//		path = "C:\\Users\\andremerdan\\Desktop\\AAATest";
 
 		DataRead.writeTextOutputFile(buffer, path);
 	}

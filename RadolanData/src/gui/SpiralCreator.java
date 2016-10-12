@@ -94,6 +94,8 @@ public class SpiralCreator extends JPanel{
 		gbc_lblStartDatum.insets = new Insets(0, 0, 5, 5);
 		gbc_lblStartDatum.gridx = 1;
 		gbc_lblStartDatum.gridy = 1;
+		gbc_lblStartDatum.insets = new Insets(10, 3, 3, 3);
+
 		add(lblStartDatum, gbc_lblStartDatum);
 
 		label_2 = new JLabel("Zeitbereich f\u00FCr Suche");

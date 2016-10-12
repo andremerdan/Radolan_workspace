@@ -2,6 +2,7 @@ package gui;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -31,6 +32,7 @@ import javax.swing.event.DocumentListener;
 
 import data.DataRead;
 import data.MongoAccess;
+import javafx.scene.shape.Box;
 import threads.FileReadThread;
 import java.awt.SystemColor;
 
@@ -61,9 +63,14 @@ public class Setup extends JPanel{
 	public static int monthEnd;
 	public static Date begin;
 	public static Date end;
+	
+	private int btnMoveRightCheck;
 
 
 	public Setup() {
+		
+//		nextButton();
+		
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -78,6 +85,7 @@ public class Setup extends JPanel{
 		gbc_lblDatenbankSetup.insets = new Insets(0, 0, 5, 5);
 		gbc_lblDatenbankSetup.gridx = 1;
 		gbc_lblDatenbankSetup.gridy = 1;
+		gbc_lblDatenbankSetup.insets = new Insets(10, 3, 3, 3);
 		add(lblDatenbankSetup, gbc_lblDatenbankSetup);
 
 		JLabel lblMongodbPfad = new JLabel("MongoDB Auswahl");
@@ -98,7 +106,7 @@ public class Setup extends JPanel{
 		add(mongodPath, gbc_mdPath);
 
 		mongodPath.setColumns(10);
-		mongodPath.setText("C:\\Program Files\\MongoDB\\Server\\3.0\\bin");
+//		mongodPath.setText("C:\\Program Files\\MongoDB\\Server\\3.0\\bin");
 		JButton mongodSelect = new JButton("Suchen");
 		mongodSelect.setIcon(null);
 		GridBagConstraints gbc_btnOrdner = new GridBagConstraints();
@@ -267,6 +275,8 @@ public class Setup extends JPanel{
 				if(returnVal == JFileChooser.APPROVE_OPTION) {
 					databasePath.setText(chooser.getSelectedFile().getPath());
 				}
+				
+				btnMoveRightCheck = 1;
 			}
 		});
 
@@ -283,12 +293,14 @@ public class Setup extends JPanel{
 			public void actionPerformed(ActionEvent arg0) {
 				JFileChooser chooser = new JFileChooser();
 				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				chooser.setDialogTitle("Neuen leeren Ordner auswï¿½hlen");
+				chooser.setDialogTitle("Neuen leeren Ordner auswählen");
 				int returnVal = chooser.showOpenDialog(null);
 				if(returnVal == JFileChooser.APPROVE_OPTION) {
 					databasePath.setText(chooser.getSelectedFile().getPath());
 				}
 
+				btnMoveRightCheck = 1;
+				
 			}
 		});
 
@@ -309,27 +321,47 @@ public class Setup extends JPanel{
 		gbc_btnVerbinden.gridx = 9;
 		gbc_btnVerbinden.gridy = 4;
 		add(verbinden, gbc_btnVerbinden);
+		
+
 
 		verbinden.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
-				if(verbinden.getText().equals("Verbinden") || verbinden.getText().equals("ï¿½ndern")){
-					boolean success = MongoAccess.startMongo(mongodPath.getText(), databasePath.getText(), chckbxMongodbMitStarten.isSelected());
-					if(chckbxMongodbMitStarten.isSelected() && success){
-						verbinden.setText("Trennen");
-					} else if(success){
-						verbinden.setText("ï¿½ndern");	
+				if(verbinden.getText().equals("Verbinden") || verbinden.getText().equals("ändern")){
+					if (databasePath.getText().equals("")) {
+						System.err.println("Text ist leer");
+						verbinden.setToolTipText("Zunächst einen Pfad auswählen");
+					}else{
+						boolean success = MongoAccess.startMongo(mongodPath.getText(), databasePath.getText(), chckbxMongodbMitStarten.isSelected());
+						if(chckbxMongodbMitStarten.isSelected() && success){
+							verbinden.setText("Trennen");
+							verbinden.setToolTipText("");
+							btnMoveRightCheck = 1;
+						} else if(success){
+							verbinden.setText("ändern");	
+						}
 					}
 				} else if(verbinden.getText().equals("Trennen")){
 					MongoAccess.stopMongoService(Setup.getMongoDPath());
 					verbinden.setText("Verbinden");
+					
+					nextButton();	
+					btnMoveRightCheck = 0;
 				}
+
+				nextButton();
+
+				
 				setDatePickerDate();
 				VisCreator.changeDate();
 				SpiralCreator.changeDate();
 				GifCreator.changeDate();
 			}
 		});
+		
+		
+		
+//		add(javax.swing.Box.createRigidArea(new Dimension(0,10)));
 
 		JLabel lblDatenEinlesen = new JLabel("RADOLAN Daten einlesen");
 		lblDatenEinlesen.setFont(new Font("Tahoma", Font.PLAIN, 16));
@@ -339,6 +371,8 @@ public class Setup extends JPanel{
 		gbc_lblDatenEinlesen.insets = new Insets(0, 0, 5, 5);
 		gbc_lblDatenEinlesen.gridx = 1;
 		gbc_lblDatenEinlesen.gridy = 10;
+		gbc_lblDatenEinlesen.insets = new Insets(60, 3, 3, 3);
+
 		add(lblDatenEinlesen, gbc_lblDatenEinlesen);
 
 		//		JLabel lblOptionenFrBereichsberechnung = new JLabel("Optionen f\u00FCr Bereichs-Berechnung");
@@ -484,8 +518,14 @@ public class Setup extends JPanel{
 		dataRead.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
-				if(!reading) readData();
+				if(!reading){
+					readData();
+				}
+				
+				nextButton();
+				
 			}
+			
 		});
 
 		currentFileRead = new JLabel("Aktuelle Datei: n/a");
@@ -503,58 +543,59 @@ public class Setup extends JPanel{
 		gbc_chckbxberschreiben.gridx = 9;
 		gbc_chckbxberschreiben.gridy = 13;
 		add(chckbxberschreiben, gbc_chckbxberschreiben);
+		
 
-		JLabel lblNutzeintrgeLschen = new JLabel("Nutzeintr\u00E4ge L\u00F6schen:");
-		GridBagConstraints gbc_lblNutzeintrgeLschen = new GridBagConstraints();
-		gbc_lblNutzeintrgeLschen.gridwidth = 2;
-		gbc_lblNutzeintrgeLschen.anchor = GridBagConstraints.EAST;
-		gbc_lblNutzeintrgeLschen.insets = new Insets(0, 0, 5, 5);
-		gbc_lblNutzeintrgeLschen.gridx = 7;
-		gbc_lblNutzeintrgeLschen.gridy = 14;
-		add(lblNutzeintrgeLschen, gbc_lblNutzeintrgeLschen);
-
-		JButton btnUsrEntryLschen = new JButton("L\u00F6schen");
-		btnUsrEntryLschen.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-			}
-		});
-		GridBagConstraints gbc_btnUsrEntryLschen = new GridBagConstraints();
-		gbc_btnUsrEntryLschen.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnUsrEntryLschen.insets = new Insets(0, 0, 5, 5);
-		gbc_btnUsrEntryLschen.gridx = 9;
-		gbc_btnUsrEntryLschen.gridy = 14;
-		add(btnUsrEntryLschen, gbc_btnUsrEntryLschen);
-
-		btnUsrEntryLschen.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent arg0) {
-				MongoAccess.dropCollection("found");
-			}
-		});
-
-		JLabel lblBegrenzungseintrgeLschen = new JLabel("Begrenzungseintr\u00E4ge L\u00F6schen:");
-		GridBagConstraints gbc_lblBegrenzungseintrgeLschen = new GridBagConstraints();
-		gbc_lblBegrenzungseintrgeLschen.gridwidth = 2;
-		gbc_lblBegrenzungseintrgeLschen.anchor = GridBagConstraints.EAST;
-		gbc_lblBegrenzungseintrgeLschen.insets = new Insets(0, 0, 5, 5);
-		gbc_lblBegrenzungseintrgeLschen.gridx = 7;
-		gbc_lblBegrenzungseintrgeLschen.gridy = 15;
-		add(lblBegrenzungseintrgeLschen, gbc_lblBegrenzungseintrgeLschen);
-
-		JButton btnNegativLschen = new JButton("L\u00F6schen");
-		GridBagConstraints gbc_btnNegativLschen = new GridBagConstraints();
-		gbc_btnNegativLschen.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnNegativLschen.insets = new Insets(0, 0, 5, 5);
-		gbc_btnNegativLschen.gridx = 9;
-		gbc_btnNegativLschen.gridy = 15;
-		add(btnNegativLschen, gbc_btnNegativLschen);
-
-		btnNegativLschen.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent arg0) {
-				MongoAccess.dropCollection("negatives");
-			}
-		});
+//		JLabel lblNutzeintrgeLschen = new JLabel("Nutzeintr\u00E4ge L\u00F6schen:");
+//		GridBagConstraints gbc_lblNutzeintrgeLschen = new GridBagConstraints();
+//		gbc_lblNutzeintrgeLschen.gridwidth = 2;
+//		gbc_lblNutzeintrgeLschen.anchor = GridBagConstraints.EAST;
+//		gbc_lblNutzeintrgeLschen.insets = new Insets(0, 0, 5, 5);
+//		gbc_lblNutzeintrgeLschen.gridx = 7;
+//		gbc_lblNutzeintrgeLschen.gridy = 14;
+//		add(lblNutzeintrgeLschen, gbc_lblNutzeintrgeLschen);
+//
+//		JButton btnUsrEntryLschen = new JButton("L\u00F6schen");
+//		btnUsrEntryLschen.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent arg0) {
+//			}
+//		});
+//		GridBagConstraints gbc_btnUsrEntryLschen = new GridBagConstraints();
+//		gbc_btnUsrEntryLschen.fill = GridBagConstraints.HORIZONTAL;
+//		gbc_btnUsrEntryLschen.insets = new Insets(0, 0, 5, 5);
+//		gbc_btnUsrEntryLschen.gridx = 9;
+//		gbc_btnUsrEntryLschen.gridy = 14;
+//		add(btnUsrEntryLschen, gbc_btnUsrEntryLschen);
+//
+//		btnUsrEntryLschen.addActionListener(new ActionListener() {
+//
+//			public void actionPerformed(ActionEvent arg0) {
+//				MongoAccess.dropCollection("found");
+//			}
+//		});
+//
+//		JLabel lblBegrenzungseintrgeLschen = new JLabel("Begrenzungseintr\u00E4ge L\u00F6schen:");
+//		GridBagConstraints gbc_lblBegrenzungseintrgeLschen = new GridBagConstraints();
+//		gbc_lblBegrenzungseintrgeLschen.gridwidth = 2;
+//		gbc_lblBegrenzungseintrgeLschen.anchor = GridBagConstraints.EAST;
+//		gbc_lblBegrenzungseintrgeLschen.insets = new Insets(0, 0, 5, 5);
+//		gbc_lblBegrenzungseintrgeLschen.gridx = 7;
+//		gbc_lblBegrenzungseintrgeLschen.gridy = 15;
+//		add(lblBegrenzungseintrgeLschen, gbc_lblBegrenzungseintrgeLschen);
+//
+//		JButton btnNegativLschen = new JButton("L\u00F6schen");
+//		GridBagConstraints gbc_btnNegativLschen = new GridBagConstraints();
+//		gbc_btnNegativLschen.fill = GridBagConstraints.HORIZONTAL;
+//		gbc_btnNegativLschen.insets = new Insets(0, 0, 5, 5);
+//		gbc_btnNegativLschen.gridx = 9;
+//		gbc_btnNegativLschen.gridy = 15;
+//		add(btnNegativLschen, gbc_btnNegativLschen);
+//
+//		btnNegativLschen.addActionListener(new ActionListener() {
+//
+//			public void actionPerformed(ActionEvent arg0) {
+//				MongoAccess.dropCollection("negatives");
+//			}
+//		});
 	}
 
 	// Set the date of the region
@@ -710,4 +751,22 @@ public class Setup extends JPanel{
 	public static boolean getShutdownMongo(){
 		return chckbxMongodbMitStarten.isSelected();
 	}
+	
+	public void nextButton(){
+		if(btnMoveRightCheck == 0){
+			Hauptfenster.moveRight.setEnabled(false);
+			Hauptfenster.moveLeft.setEnabled(false);
+			Hauptfenster.moveRight.setToolTipText("Verbinden Sie zuerst die Datenbank");
+			Hauptfenster.moveLeft.setToolTipText("Verbinden Sie zuerst die Datenbank");
+			Hauptfenster.tabbedPane.setEnabled(false);
+		}
+		else if(btnMoveRightCheck == 1){
+			Hauptfenster.moveRight.setEnabled(true);
+			Hauptfenster.moveLeft.setEnabled(true);
+			Hauptfenster.tabbedPane.setEnabled(true);
+			Hauptfenster.moveRight.setToolTipText("");
+			Hauptfenster.moveLeft.setToolTipText("");
+		}
+	}
+
 }

@@ -81,6 +81,7 @@ public class AreaSelect extends JPanel{
 		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
 		gbc_lblNewLabel.gridx = 1;
 		gbc_lblNewLabel.gridy = 1;
+		gbc_lblNewLabel.insets = new Insets(10, 3, 3, 3);
 		add(lblNewLabel, gbc_lblNewLabel);
 
 		drawPanel = new MapDrawPanel();
@@ -90,7 +91,7 @@ public class AreaSelect extends JPanel{
 		gbc_drawPanel.insets = new Insets(0, 0, 5, 5);
 		gbc_drawPanel.fill = GridBagConstraints.BOTH;
 		gbc_drawPanel.gridx = 1;
-		gbc_drawPanel.gridy = 3;
+//		gbc_drawPanel.gridy = 3;
 		add(drawPanel, gbc_drawPanel);
 
 		JLabel lblLngenBreitengrade = new JLabel("Oberer Linker L\u00E4ngengrad");
@@ -287,6 +288,11 @@ public class AreaSelect extends JPanel{
 					area[3] = 900;
 					break;
 				}
+
+				area1.setText(""+area[0]);
+				area2.setText(""+area[1]);
+				area3.setText(""+area[2]);
+				area4.setText(""+area[3]);
 			}
 		});
 		

@@ -209,7 +209,7 @@ public class VisPreparation {
 		BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
 
 		System.out.println("Beginning image draw - createPNG");
-
+		
 		Graphics g = bi.getGraphics();
 		g.setColor(new Color(Color.TRANSLUCENT));
 		g.drawRect(0, 0, w, h);
@@ -230,16 +230,22 @@ public class VisPreparation {
 						
 						// Color of Clouds
 						
-						if(values[x][y] > 300){
-							g.setColor(Color.RED);
+						if(values[x][y] > 700){
+							g.setColor(new Color(0, 77, 168));
+						}else if(values[x][y] > 600){
+							g.setColor(new Color(0, 112, 255));
+						}else if(values[x][y] > 500){
+							g.setColor(new Color(168, 0, 132));
+						}else if(values[x][y] > 400){
+							g.setColor(new Color(255, 0, 197));
+						}else if(values[x][y] > 300){
+							g.setColor(new Color(230, 0, 0));
 						}else if(values[x][y] > 200){
-							g.setColor(Color.YELLOW);
+							g.setColor(new Color(255, 85, 0));
 						}else if(values[x][y] > 100){
-							g.setColor(Color.GREEN);
-						}else if(values[x][y] > 50){
-							g.setColor(Color.BLUE);
+							g.setColor(new Color(255, 170, 0));
 						}else if(values[x][y] > 0){
-							g.setColor(Color.PINK);
+							g.setColor(new Color(255, 255, 115));
 						}
 						
 //						g.setColor(new Color(100 - value, 100 - value, 200 - value));

@@ -349,6 +349,8 @@ public class DataRead {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		System.out.println("Path: "+path);
+		System.out.println("Datapath: "+dataPath);
 	}
 
 	/**
@@ -430,6 +432,7 @@ public class DataRead {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		return values;
 	}
 }

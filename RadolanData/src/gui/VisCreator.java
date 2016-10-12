@@ -120,6 +120,8 @@ public class VisCreator extends JPanel{
 		gbc_lblVisualisierung.insets = new Insets(0, 0, 5, 5);
 		gbc_lblVisualisierung.gridx = 1;
 		gbc_lblVisualisierung.gridy = 1;
+		gbc_lblVisualisierung.insets = new Insets(10, 3, 3, 3);
+
 		add(lblVisualisierung, gbc_lblVisualisierung);
 
 		label = new JLabel("Zeitbereich f\u00FCr Suche");

@@ -101,6 +101,7 @@ public class GifCreator extends JPanel{
 		gbc_lblAnimationErstellen.insets = new Insets(0, 0, 5, 5);
 		gbc_lblAnimationErstellen.gridx = 1;
 		gbc_lblAnimationErstellen.gridy = 1;
+		gbc_lblAnimationErstellen.insets = new Insets(10, 3, 3, 3);
 		add(lblAnimationErstellen, gbc_lblAnimationErstellen);
 
 		lblZeitbereichFrAnimation = new JLabel("Zeitbereich f\u00FCr Animation");
