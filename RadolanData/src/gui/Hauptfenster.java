@@ -157,8 +157,6 @@ public class Hauptfenster extends JFrame implements ActionListener{
 		GifCreator gif = new GifCreator();
 		tabbedPane.addTab("Animation Erstellen", null, gif, null);
 		
-		Tablesearch tablesearch = new Tablesearch();
-		tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
 		
 	}
 

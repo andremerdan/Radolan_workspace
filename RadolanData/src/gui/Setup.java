@@ -72,17 +72,17 @@ public class Setup extends JPanel{
 //		nextButton();
 		
 		GridBagLayout gridBagLayout = new GridBagLayout();
-		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 60, 40, 0, 0, 0, 0, 0, 0, 0};
 		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 
 		JLabel lblDatenbankSetup = new JLabel("Datenbank - Auswahl");
 		lblDatenbankSetup.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		GridBagConstraints gbc_lblDatenbankSetup = new GridBagConstraints();
-		gbc_lblDatenbankSetup.gridwidth = 14;
-		gbc_lblDatenbankSetup.insets = new Insets(0, 0, 5, 5);
+		gbc_lblDatenbankSetup.gridwidth = 15;
+		gbc_lblDatenbankSetup.insets = new Insets(10, 3, 5, 5);
 		gbc_lblDatenbankSetup.gridx = 1;
 		gbc_lblDatenbankSetup.gridy = 1;
 		gbc_lblDatenbankSetup.insets = new Insets(10, 3, 3, 3);
@@ -106,15 +106,17 @@ public class Setup extends JPanel{
 		add(mongodPath, gbc_mdPath);
 
 		mongodPath.setColumns(10);
-//		mongodPath.setText("C:\\Program Files\\MongoDB\\Server\\3.0\\bin");
-		JButton mongodSelect = new JButton("Suchen");
+		mongodPath.setToolTipText("C:\\Program Files\\MongoDB\\Server\\3.0\\bin");
+		JButton mongodSelect = new JButton("Ausw\u00E4hlen");
 		mongodSelect.setIcon(null);
 		GridBagConstraints gbc_btnOrdner = new GridBagConstraints();
 		gbc_btnOrdner.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnOrdner.gridwidth = 2;
 		gbc_btnOrdner.insets = new Insets(0, 0, 5, 5);
 		gbc_btnOrdner.gridx = 9;
 		gbc_btnOrdner.gridy = 2;
 		add(mongodSelect, gbc_btnOrdner);
+		
 		//		GridBagConstraints gbc_yPolar = new GridBagConstraints();
 		//		gbc_yPolar.gridwidth = 2;
 		//		gbc_yPolar.insets = new Insets(0, 0, 5, 5);
@@ -164,9 +166,10 @@ public class Setup extends JPanel{
 
 		JButton btnPathLaden = new JButton("Laden");
 		GridBagConstraints gbc_btnPathLaden = new GridBagConstraints();
-		gbc_btnPathLaden.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnPathLaden.gridheight = 2;
+		gbc_btnPathLaden.fill = GridBagConstraints.BOTH;
 		gbc_btnPathLaden.insets = new Insets(0, 0, 5, 5);
-		gbc_btnPathLaden.gridx = 10;
+		gbc_btnPathLaden.gridx = 11;
 		gbc_btnPathLaden.gridy = 2;
 		add(btnPathLaden, gbc_btnPathLaden);
 
@@ -174,17 +177,20 @@ public class Setup extends JPanel{
 
 			public void actionPerformed(ActionEvent arg0) {
 				ArrayList<String> list = DataRead.readXML("options\\SavedPaths.xml");
-				if(list.size() == 1){
+				if(list.size() == 2){
 					mongodPath.setText(list.get(0));
+					databasePath.setText(list.get(1));
 				}
 			}
 		});
 
 		JButton btnPathSpeichern = new JButton("Speichern");
 		GridBagConstraints gbc_btnPathSpeichern = new GridBagConstraints();
+		gbc_btnPathSpeichern.fill = GridBagConstraints.VERTICAL;
+		gbc_btnPathSpeichern.gridheight = 2;
 		gbc_btnPathSpeichern.anchor = GridBagConstraints.WEST;
 		gbc_btnPathSpeichern.insets = new Insets(0, 0, 5, 5);
-		gbc_btnPathSpeichern.gridx = 11;
+		gbc_btnPathSpeichern.gridx = 12;
 		gbc_btnPathSpeichern.gridy = 2;
 		add(btnPathSpeichern, gbc_btnPathSpeichern);
 		
@@ -195,49 +201,50 @@ public class Setup extends JPanel{
 			public void actionPerformed(ActionEvent arg0) {
 				ArrayList<String> list = new ArrayList<String>();
 				list.add(mongodPath.getText());
+				list.add(databasePath.getText());
 				DataRead.writeXML(list, "options\\SavedPaths.xml");
 				btnPathSpeichern.setBackground(Color.green);
 				
 			}
 		});
 		
-		mongodPath.getDocument().addDocumentListener(new DocumentListener() {
-			
-			ArrayList<String> list = DataRead.readXML("options\\SavedPaths.xml");
-//		
-			
-			@Override
-			public void changedUpdate(DocumentEvent e) {
-				if (list.get(0) == mongodPath.getText()) {
-					System.out.println("1 " + list.get(0));
-					System.out.println("2 " + mongodPath.getText());
-					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
-					System.out.println("3 " + list.get(0));
-					System.out.println("2" + mongodPath.getText());
-				}
-			}
-
-			@Override
-			public void insertUpdate(DocumentEvent e) {
-				if (list.get(0) != mongodPath.getText()) {
-					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
-				}
-				
-			}
-
-			@Override
-			public void removeUpdate(DocumentEvent e) {
-				if (list.get(0) != mongodPath.getText()) {
-					btnPathSpeichern.setBackground(Color.red);
-				}else{
-					btnPathSpeichern.setBackground(Color.green);
-				}
-			}
-		});
+//		mongodPath.getDocument().addDocumentListener(new DocumentListener() {
+//			
+//			ArrayList<String> list = DataRead.readXML("options\\SavedPaths.xml");
+////		
+//			
+//			@Override
+//			public void changedUpdate(DocumentEvent e) {
+//				if (list.get(0) == mongodPath.getText()) {
+//					System.out.println("1 " + list.get(0));
+//					System.out.println("2 " + mongodPath.getText());
+//					btnPathSpeichern.setBackground(Color.red);
+//				}else{
+//					btnPathSpeichern.setBackground(Color.green);
+//					System.out.println("3 " + list.get(0));
+//					System.out.println("2" + mongodPath.getText());
+//				}
+//			}
+//
+//			@Override
+//			public void insertUpdate(DocumentEvent e) {
+//				if (list.get(0) != mongodPath.getText()) {
+//					btnPathSpeichern.setBackground(Color.red);
+//				}else{
+//					btnPathSpeichern.setBackground(Color.green);
+//				}
+//				
+//			}
+//
+//			@Override
+//			public void removeUpdate(DocumentEvent e) {
+//				if (list.get(0) != mongodPath.getText()) {
+//					btnPathSpeichern.setBackground(Color.red);
+//				}else{
+//					btnPathSpeichern.setBackground(Color.green);
+//				}
+//			}
+//		});
 
 		JLabel lblDatenPfad = new JLabel("Datenbank");
 		GridBagConstraints gbc_lblDatenPfad = new GridBagConstraints();
@@ -257,9 +264,9 @@ public class Setup extends JPanel{
 		add(databasePath, gbc_dbPath);
 		databasePath.setColumns(10);
 
-		JButton loadDatabaseSelect = new JButton("Laden");
+		JButton loadDatabaseSelect = new JButton("Suchen");
 		GridBagConstraints gbc_btnOrdner_1 = new GridBagConstraints();
-		gbc_btnOrdner_1.fill = GridBagConstraints.HORIZONTAL;
+		gbc_btnOrdner_1.fill = GridBagConstraints.BOTH;
 		gbc_btnOrdner_1.insets = new Insets(0, 0, 5, 5);
 		gbc_btnOrdner_1.gridx = 9;
 		gbc_btnOrdner_1.gridy = 3;
@@ -279,30 +286,30 @@ public class Setup extends JPanel{
 				btnMoveRightCheck = 1;
 			}
 		});
-
-		JButton newDatabaseSelect = new JButton("Neue DB");
-		GridBagConstraints gbc_btnOrdner_2 = new GridBagConstraints();
-		gbc_btnOrdner_2.fill = GridBagConstraints.HORIZONTAL;
-		gbc_btnOrdner_2.insets = new Insets(0, 0, 5, 5);
-		gbc_btnOrdner_2.gridx = 10;
-		gbc_btnOrdner_2.gridy = 3;
-		add(newDatabaseSelect, gbc_btnOrdner_2);
-
-		newDatabaseSelect.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent arg0) {
-				JFileChooser chooser = new JFileChooser();
-				chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-				chooser.setDialogTitle("Neuen leeren Ordner auswählen");
-				int returnVal = chooser.showOpenDialog(null);
-				if(returnVal == JFileChooser.APPROVE_OPTION) {
-					databasePath.setText(chooser.getSelectedFile().getPath());
-				}
-
-				btnMoveRightCheck = 1;
+		
+				JButton newDatabaseSelect = new JButton("Neue DB");
+				GridBagConstraints gbc_btnOrdner_2 = new GridBagConstraints();
+				gbc_btnOrdner_2.anchor = GridBagConstraints.WEST;
+				gbc_btnOrdner_2.insets = new Insets(0, 0, 5, 5);
+				gbc_btnOrdner_2.gridx = 10;
+				gbc_btnOrdner_2.gridy = 3;
+				add(newDatabaseSelect, gbc_btnOrdner_2);
 				
-			}
-		});
+						newDatabaseSelect.addActionListener(new ActionListener() {
+				
+							public void actionPerformed(ActionEvent arg0) {
+								JFileChooser chooser = new JFileChooser();
+								chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+								chooser.setDialogTitle("Neuen leeren Ordner auswählen");
+								int returnVal = chooser.showOpenDialog(null);
+								if(returnVal == JFileChooser.APPROVE_OPTION) {
+									databasePath.setText(chooser.getSelectedFile().getPath());
+								}
+				
+								btnMoveRightCheck = 1;
+								
+							}
+						});
 
 		chckbxMongodbMitStarten = new JCheckBox("MongoDB mit starten?");
 		GridBagConstraints gbc_chckbxMongodbMitStarten = new GridBagConstraints();
@@ -315,6 +322,7 @@ public class Setup extends JPanel{
 
 		verbinden = new JButton("Verbinden");
 		GridBagConstraints gbc_btnVerbinden = new GridBagConstraints();
+		gbc_btnVerbinden.gridwidth = 4;
 //		gbc_btnVerbinden.gridwidth = 3;
 		gbc_btnVerbinden.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnVerbinden.insets = new Insets(0, 0, 5, 5);
@@ -367,8 +375,8 @@ public class Setup extends JPanel{
 		lblDatenEinlesen.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		GridBagConstraints gbc_lblDatenEinlesen = new GridBagConstraints();
 		gbc_lblDatenEinlesen.anchor = GridBagConstraints.SOUTH;
-		gbc_lblDatenEinlesen.gridwidth = 14;
-		gbc_lblDatenEinlesen.insets = new Insets(0, 0, 5, 5);
+		gbc_lblDatenEinlesen.gridwidth = 15;
+		gbc_lblDatenEinlesen.insets = new Insets(60, 3, 5, 5);
 		gbc_lblDatenEinlesen.gridx = 1;
 		gbc_lblDatenEinlesen.gridy = 10;
 		gbc_lblDatenEinlesen.insets = new Insets(60, 3, 3, 3);
@@ -442,11 +450,11 @@ public class Setup extends JPanel{
 		chckbxMongodbMitStarten.addActionListener(new ActionListener() {
 
 			public void actionPerformed(ActionEvent arg0) {
-				if(chckbxMongodbMitStarten.isSelected() && verbinden.getText().equals("ï¿½ndern")){
+				if(chckbxMongodbMitStarten.isSelected() && verbinden.getText().equals("ändern")){
 					verbinden.setText("Trennen");
 				}
 				else if(!chckbxMongodbMitStarten.isSelected() && verbinden.getText().equals("Trennen")){
-					verbinden.setText("ï¿½ndern");
+					verbinden.setText("ändern");
 				}
 			}
 		});

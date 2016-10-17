@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <options>
-    <entry>C:\Program Files\MongoDB\Server\3.2\bin</entry>
+    <entry>C:\Program Files\MongoDB\Server\3.0\bin</entry>
+    <entry>\\Mac\Home\Documents\TestDaten\7</entry>
 </options>

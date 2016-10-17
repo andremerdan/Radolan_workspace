@@ -57,7 +57,7 @@ public class Main extends JFrame {
 		FutureTask<Integer> futureTask1 = new FutureTask<Integer>(new Callable<Integer>(){
 			
 			public Integer call(){
-				gui.SplashScreen.SplashScreenThread();
+				SplashScreen splashScreen = new SplashScreen();
 				return null;
 			}			
 		});	

@@ -3,11 +3,15 @@ package threads;
 import gui.Hauptfenster;
 import gui.Setup;
 import gui.Tablesearch;
+import gui.VisCreator;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
+
+import javax.swing.table.DefaultTableModel;
 
 import data.DataRead;
 import data.UserCreatedEntry;
@@ -36,7 +40,11 @@ public class TextOutputCreationThread implements Runnable {
 	public static String[] columnNames = {
 			"Area", "Date", "Value in mm"
 	};
-	public static double[][] data = {};
+	public static List<Object> data;
+	int b = 0;
+	int c = 0;
+	
+	public static DefaultTableModel model;
 
 	/**
 	 * 
@@ -69,9 +77,17 @@ public class TextOutputCreationThread implements Runnable {
 	}
 
 	public void run() { 
+		String col[] = {"Zeit","X-Koor.","Y-Koor.","Niederschlag in mm"};
+		model = new DefaultTableModel(col, 0){
+			@Override
+			public boolean isCellEditable(int row, int column) {
+				return false;
+			}
+		};
 		
-//		data = new Object[900][900];
-		data = new double[900][900]; 
+		List<Object> data = new ArrayList<>();
+//		data = new Object[810000][4];
+
 		StringBuffer buffer = new StringBuffer();
 
 		buffer.append("Suchergebnisse für ");
@@ -191,35 +207,35 @@ public class TextOutputCreationThread implements Runnable {
 					for(int y = area[1]; y < area[3]; y++){
 						if(values[899 - y][899 - x] >= minimum){
 							buffer.append("\n\t\tStelle (");
+					
+							Object[] objs = {time,(x+1),(y+1), (values[899-y][899-x]/collectionDivision)};
 							
-							data[x][y] = x+1;
+							model.addRow(objs);
+//							data.add(new int[] {(x+1),(y+1), (values[899-y][899-x]/collectionDivision)} );
+//							data[b][0] = x+1;
+//							System.out.println(c + " 2 "+data[b][0]);
 							buffer.append(x+1);
 							buffer.append(", ");
-							data[x][y] = 900-y;
+//							data[b][1] = 900-y;
 							buffer.append(900-y);
 							buffer.append(") mit ");
-							data[x][y] = ((double) values[899-y][899-x]) / collectionDivision;
+//							data[b][2] = ((double) values[899-y][899-x]) / collectionDivision;
 							buffer.append(((double) values[899-y][899-x]) / collectionDivision);
 							buffer.append(" mm");
+							b = b + 1;
+							c = c + 1;
 						}
 					}
 				}
 			}
 		}
 		
-		for (int i = 0; i < data.length; i++) {
-			for (int j = 0; j < data.length; j++) {
-				System.out.println("Data["+i+"]["+j+"] = " + Arrays.toString(data));
-			}
-		}
+		VisCreator.btnCreateTextOutput.setIcon(null);
+		VisCreator.btnCreateTextOutput.setText("Textausgabe");
 		
-//		Tablesearch.setTable();
-//		System.out.println();
-		Hauptfenster.frame.revalidate();
-		Hauptfenster.frame.repaint();
-
-//		path = "C:\\Users\\andremerdan\\Desktop\\AAATest";
-
+		Tablesearch tablesearch = new Tablesearch();
+		Hauptfenster.tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
+		
 		DataRead.writeTextOutputFile(buffer, path);
 	}
 }

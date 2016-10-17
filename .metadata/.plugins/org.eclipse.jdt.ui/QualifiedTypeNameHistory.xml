@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="com.sun.javafx.geom.Rectangle"/>
 <fullyQualifiedTypeName name="javafx.scene.control.TabPane"/>
 <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
-<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.JWindow"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="java.net.URL"/>
@@ -23,6 +22,7 @@
 <fullyQualifiedTypeName name="main.Main"/>
 <fullyQualifiedTypeName name="java.awt.SplashScreen"/>
 <fullyQualifiedTypeName name="javax.swing.text.html.ImageView"/>
-<fullyQualifiedTypeName name="java.awt.Image"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="gui.SplashScreen"/>
+<fullyQualifiedTypeName name="java.awt.Image"/>
 </qualifiedTypeNameHistroy>
