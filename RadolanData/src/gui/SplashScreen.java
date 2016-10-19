@@ -21,7 +21,7 @@ public class SplashScreen extends JFrame{
 		this.setSize(900, 560);
 		this.setLocationRelativeTo(null);
 		this.setVisible(true);
-		
+		this.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 
 		try {
 		    Thread.sleep(10000);

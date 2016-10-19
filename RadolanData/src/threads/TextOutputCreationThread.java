@@ -230,12 +230,16 @@ public class TextOutputCreationThread implements Runnable {
 			}
 		}
 		
-		VisCreator.btnCreateTextOutput.setIcon(null);
-		VisCreator.btnCreateTextOutput.setText("Textausgabe");
+		VisCreator.loadingLable.setIcon(null);
 		
-		Tablesearch tablesearch = new Tablesearch();
-		Hauptfenster.tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
-		
+		if (VisCreator.btnCreatedVerzeichnisclicked <= 0) {
+			if(VisCreator.btnCreatedVerzeichnisclicked == 1){
+				Tablesearch tablesearch = new Tablesearch();
+				Hauptfenster.tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
+			}
+			Hauptfenster.tabbedPane.setSelectedIndex(5);
+		}
+		VisCreator.minimumSet.setBackground(null);
 		DataRead.writeTextOutputFile(buffer, path);
 	}
 }

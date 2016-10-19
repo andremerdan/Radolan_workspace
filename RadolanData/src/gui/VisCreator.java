@@ -1,5 +1,6 @@
 package gui;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -57,7 +58,7 @@ public class VisCreator extends JPanel{
 	private static boolean active = false;
 	private JLabel lblVisualisierung;
 	private JLabel lblNiederschlagsminimumInMl;
-	private JTextField minimumSet;
+	public static JTextField minimumSet;
 	private JButton btnSearch;
 	private JLabel lblbereinstimmendeZeitbereiche;
 	private static JLabel foundDateRanges;
@@ -91,7 +92,7 @@ public class VisCreator extends JPanel{
 	private JSpinner secondTimePick;
 	private JLabel lblGefundeneberschreitungen;
 	private static JLabel foundEntryNumber;
-	public static JButton btnCreateTextOutput;
+	private JButton btnCreateTextOutput;
 	private JLabel lblSpeicherpfadFrTextausgabe;
 	private JTextField textSpeicherPfad;
 	private JButton btnTextOrdner;
@@ -101,6 +102,11 @@ public class VisCreator extends JPanel{
 	// Loading icon gif
 	public Icon loading = new ImageIcon("webpage\\img\\loading.gif");
 	private JLabel lblVerzeichnisLoading;
+	private JButton btnCreateVerzeichnis;
+	public static int btnCreatedVerzeichnisclicked = 0;
+	
+	private Color lightRed = Color.MAGENTA;
+	public static JLabel loadingLable;
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public VisCreator(){
@@ -111,9 +117,9 @@ public class VisCreator extends JPanel{
 
 		GridBagLayout gridBagLayout = new GridBagLayout();
 		gridBagLayout.columnWidths = new int[] {30, 0, 0, 0, 0, 0, 0, 0, 0, 30};
-		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 		gridBagLayout.columnWeights = new double[]{0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0};
-		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 
 		lblVisualisierung = new JLabel("Visualisierung");
@@ -330,57 +336,97 @@ public class VisCreator extends JPanel{
 		gbc_btnTextOrdner.gridx = 7;
 		gbc_btnTextOrdner.gridy = 11;
 		add(btnTextOrdner, gbc_btnTextOrdner);
-
-		lblbereinstimmendeZeitbereiche = new JLabel("Gefundene Zeitbereiche:");
-		GridBagConstraints gbc_lblbereinstimmendeZeitbereiche = new GridBagConstraints();
-		gbc_lblbereinstimmendeZeitbereiche.gridwidth = 2;
-		gbc_lblbereinstimmendeZeitbereiche.anchor = GridBagConstraints.EAST;
-		gbc_lblbereinstimmendeZeitbereiche.insets = new Insets(0, 0, 5, 5);
-		gbc_lblbereinstimmendeZeitbereiche.gridx = 1;
-		gbc_lblbereinstimmendeZeitbereiche.gridy = 13;
-		add(lblbereinstimmendeZeitbereiche, gbc_lblbereinstimmendeZeitbereiche);
-
 		
+				lblbereinstimmendeZeitbereiche = new JLabel("Gefundene Zeitbereiche:");
+				GridBagConstraints gbc_lblbereinstimmendeZeitbereiche = new GridBagConstraints();
+				gbc_lblbereinstimmendeZeitbereiche.gridwidth = 2;
+				gbc_lblbereinstimmendeZeitbereiche.anchor = GridBagConstraints.EAST;
+				gbc_lblbereinstimmendeZeitbereiche.insets = new Insets(0, 0, 5, 5);
+				gbc_lblbereinstimmendeZeitbereiche.gridx = 1;
+				gbc_lblbereinstimmendeZeitbereiche.gridy = 12;
+				add(lblbereinstimmendeZeitbereiche, gbc_lblbereinstimmendeZeitbereiche);
 		
-		foundDateRanges = new JLabel("n/a");
-		GridBagConstraints gbc_foundDateRanges = new GridBagConstraints();
-		gbc_foundDateRanges.gridwidth = 4;
-		gbc_foundDateRanges.anchor = GridBagConstraints.WEST;
-		gbc_foundDateRanges.insets = new Insets(0, 0, 5, 5);
-		gbc_foundDateRanges.gridx = 3;
-		gbc_foundDateRanges.gridy = 13;
-		add(foundDateRanges, gbc_foundDateRanges);
-
-		btnCreateTextOutput = new JButton("Textausgabe");
-		GridBagConstraints gbc_btnCreateTextOutput = new GridBagConstraints();
-		gbc_btnCreateTextOutput.insets = new Insets(0, 0, 5, 5);
-		gbc_btnCreateTextOutput.gridx = 7;
-		gbc_btnCreateTextOutput.gridy = 13;
-		add(btnCreateTextOutput, gbc_btnCreateTextOutput);
-
+				
+				
+				foundDateRanges = new JLabel("n/a");
+				GridBagConstraints gbc_foundDateRanges = new GridBagConstraints();
+				gbc_foundDateRanges.gridwidth = 2;
+				gbc_foundDateRanges.anchor = GridBagConstraints.WEST;
+				gbc_foundDateRanges.insets = new Insets(0, 0, 5, 5);
+				gbc_foundDateRanges.gridx = 3;
+				gbc_foundDateRanges.gridy = 12;
+				add(foundDateRanges, gbc_foundDateRanges);
+		
+				btnCreateTextOutput = new JButton("Textausgabe");
+				GridBagConstraints gbc_btnCreateTextOutput = new GridBagConstraints();
+				gbc_btnCreateTextOutput.insets = new Insets(0, 0, 5, 5);
+				gbc_btnCreateTextOutput.gridx = 7;
+				gbc_btnCreateTextOutput.gridy = 12;
+				add(btnCreateTextOutput, gbc_btnCreateTextOutput);
+				
+						btnCreateTextOutput.addActionListener(new ActionListener() {
+				
+							public void actionPerformed(ActionEvent arg0) {
+								if (minimumSet.getText().isEmpty()) {
+									minimumSet.setBackground(lightRed);
+								} else {
+									getCreatedText();
+								}
+							}
+						});
+				
+		loadingLable = new JLabel("");
+		GridBagConstraints gbc_loadingLable = new GridBagConstraints();
+		gbc_loadingLable.fill = GridBagConstraints.BOTH;
+		gbc_loadingLable.gridheight = 2;
+		gbc_loadingLable.insets = new Insets(0, 0, 5, 5);
+		gbc_loadingLable.gridx = 8;
+		gbc_loadingLable.gridy = 12;
+		add(loadingLable, gbc_loadingLable);
+		
 		lblGefundeneberschreitungen = new JLabel("Gefundene \u00DCberschreitungen:");
 		GridBagConstraints gbc_lblGefundeneberschreitungen = new GridBagConstraints();
 		gbc_lblGefundeneberschreitungen.anchor = GridBagConstraints.EAST;
 		gbc_lblGefundeneberschreitungen.gridwidth = 2;
 		gbc_lblGefundeneberschreitungen.insets = new Insets(0, 0, 5, 5);
 		gbc_lblGefundeneberschreitungen.gridx = 1;
-		gbc_lblGefundeneberschreitungen.gridy = 14;
+		gbc_lblGefundeneberschreitungen.gridy = 13;
 		add(lblGefundeneberschreitungen, gbc_lblGefundeneberschreitungen);
-
+		
 		foundEntryNumber = new JLabel("n/a");
 		GridBagConstraints gbc_foundEntryNumber = new GridBagConstraints();
 		gbc_foundEntryNumber.anchor = GridBagConstraints.WEST;
-		gbc_foundEntryNumber.gridwidth = 4;
+		gbc_foundEntryNumber.gridwidth = 2;
 		gbc_foundEntryNumber.insets = new Insets(0, 0, 5, 5);
 		gbc_foundEntryNumber.gridx = 3;
-		gbc_foundEntryNumber.gridy = 14;
+		gbc_foundEntryNumber.gridy = 13;
 		add(foundEntryNumber, gbc_foundEntryNumber);
+		
+		btnCreateVerzeichnis = new JButton("Verzeichnis");
+		GridBagConstraints gbc_btnCreateVerzeichnis = new GridBagConstraints();
+		gbc_btnCreateVerzeichnis.insets = new Insets(0, 0, 5, 5);
+		gbc_btnCreateVerzeichnis.gridx = 7;
+		gbc_btnCreateVerzeichnis.gridy = 13;
+		add(btnCreateVerzeichnis, gbc_btnCreateVerzeichnis);
+		
+		btnCreateVerzeichnis.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				btnCreatedVerzeichnisclicked++;
+				if (minimumSet.getText().isEmpty()) {
+					minimumSet.setBackground(lightRed);
+				} else {
+					getCreatedText();
+				}	
+			}
+		});
 		
 		lblVerzeichnisLoading = new JLabel();
 		GridBagConstraints gbc_lblVerzeichnisLoading = new GridBagConstraints();
 		gbc_lblVerzeichnisLoading.insets = new Insets(0, 0, 5, 5);
 		gbc_lblVerzeichnisLoading.gridx = 7;
-		gbc_lblVerzeichnisLoading.gridy = 14;
+		gbc_lblVerzeichnisLoading.gridy = 16;
 		add(lblVerzeichnisLoading, gbc_lblVerzeichnisLoading);
 
 		lblBereitsMarkiert = new JLabel("Nutzererstellte Eintr\u00E4ge:");
@@ -389,7 +435,7 @@ public class VisCreator extends JPanel{
 		gbc_lblBereitsMarkiert.anchor = GridBagConstraints.EAST;
 		gbc_lblBereitsMarkiert.insets = new Insets(0, 0, 5, 5);
 		gbc_lblBereitsMarkiert.gridx = 1;
-		gbc_lblBereitsMarkiert.gridy = 16;
+		gbc_lblBereitsMarkiert.gridy = 18;
 		add(lblBereitsMarkiert, gbc_lblBereitsMarkiert);
 
 		foundEntries = new JLabel("n/a");
@@ -398,7 +444,7 @@ public class VisCreator extends JPanel{
 		gbc_foundEntries.anchor = GridBagConstraints.WEST;
 		gbc_foundEntries.insets = new Insets(0, 0, 5, 5);
 		gbc_foundEntries.gridx = 3;
-		gbc_foundEntries.gridy = 16;
+		gbc_foundEntries.gridy = 18;
 		add(foundEntries, gbc_foundEntries);
 
 		lblVisualisierungsart = new JLabel("Visualisierungsart:");
@@ -407,7 +453,7 @@ public class VisCreator extends JPanel{
 		gbc_lblVisualisierungsart.anchor = GridBagConstraints.EAST;
 		gbc_lblVisualisierungsart.insets = new Insets(0, 0, 5, 5);
 		gbc_lblVisualisierungsart.gridx = 1;
-		gbc_lblVisualisierungsart.gridy = 17;
+		gbc_lblVisualisierungsart.gridy = 19;
 		add(lblVisualisierungsart, gbc_lblVisualisierungsart);
 
 		visualizationSelect = new JComboBox();
@@ -417,7 +463,7 @@ public class VisCreator extends JPanel{
 		gbc_visualizationSelect.anchor = GridBagConstraints.WEST;
 		gbc_visualizationSelect.insets = new Insets(0, 0, 5, 5);
 		gbc_visualizationSelect.gridx = 3;
-		gbc_visualizationSelect.gridy = 17;
+		gbc_visualizationSelect.gridy = 19;
 		add(visualizationSelect, gbc_visualizationSelect);
 
 		lblAktuellErstellteDatei = new JLabel("Aktuell erstellte Datei:");
@@ -426,7 +472,7 @@ public class VisCreator extends JPanel{
 		gbc_lblAktuellErstellteDatei.anchor = GridBagConstraints.EAST;
 		gbc_lblAktuellErstellteDatei.insets = new Insets(0, 0, 5, 5);
 		gbc_lblAktuellErstellteDatei.gridx = 1;
-		gbc_lblAktuellErstellteDatei.gridy = 19;
+		gbc_lblAktuellErstellteDatei.gridy = 21;
 		add(lblAktuellErstellteDatei, gbc_lblAktuellErstellteDatei);
 
 		lblCurrentVisFile = new JLabel("n/a");
@@ -435,7 +481,7 @@ public class VisCreator extends JPanel{
 		gbc_lblCurrentVisFile.anchor = GridBagConstraints.WEST;
 		gbc_lblCurrentVisFile.insets = new Insets(0, 0, 5, 5);
 		gbc_lblCurrentVisFile.gridx = 3;
-		gbc_lblCurrentVisFile.gridy = 19;
+		gbc_lblCurrentVisFile.gridy = 21;
 		add(lblCurrentVisFile, gbc_lblCurrentVisFile);
 
 		btnShow = new JButton("Anzeigen");
@@ -443,7 +489,7 @@ public class VisCreator extends JPanel{
 		gbc_btnShow.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnShow.insets = new Insets(0, 0, 5, 5);
 		gbc_btnShow.gridx = 7;
-		gbc_btnShow.gridy = 19;
+		gbc_btnShow.gridy = 21;
 		add(btnShow, gbc_btnShow);
 
 		lblAnimationStatus = new JLabel("Visualisierungsstatus:");
@@ -452,7 +498,7 @@ public class VisCreator extends JPanel{
 		gbc_lblAnimationStatus.anchor = GridBagConstraints.EAST;
 		gbc_lblAnimationStatus.insets = new Insets(0, 0, 5, 5);
 		gbc_lblAnimationStatus.gridx = 1;
-		gbc_lblAnimationStatus.gridy = 20;
+		gbc_lblAnimationStatus.gridy = 22;
 		add(lblAnimationStatus, gbc_lblAnimationStatus);
 
 		lblVisCreationStatus = new JLabel("n/a");
@@ -461,7 +507,7 @@ public class VisCreator extends JPanel{
 		gbc_lblVisCreationStatus.anchor = GridBagConstraints.WEST;
 		gbc_lblVisCreationStatus.insets = new Insets(0, 0, 5, 5);
 		gbc_lblVisCreationStatus.gridx = 3;
-		gbc_lblVisCreationStatus.gridy = 20;
+		gbc_lblVisCreationStatus.gridy = 22;
 		add(lblVisCreationStatus, gbc_lblVisCreationStatus);
 
 		btnAbbrechen = new JButton("Abbrechen");
@@ -469,7 +515,7 @@ public class VisCreator extends JPanel{
 		gbc_btnAbbrechen.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnAbbrechen.insets = new Insets(0, 0, 5, 5);
 		gbc_btnAbbrechen.gridx = 7;
-		gbc_btnAbbrechen.gridy = 20;
+		gbc_btnAbbrechen.gridy = 22;
 		add(btnAbbrechen, gbc_btnAbbrechen);
 
 		lblBisherigeBilderFr = new JLabel("Bisherige Bilder f\u00FCr Visualisierung L\u00F6schen:");
@@ -478,7 +524,7 @@ public class VisCreator extends JPanel{
 		gbc_lblBisherigeBilderFr.anchor = GridBagConstraints.EAST;
 		gbc_lblBisherigeBilderFr.insets = new Insets(0, 0, 0, 5);
 		gbc_lblBisherigeBilderFr.gridx = 3;
-		gbc_lblBisherigeBilderFr.gridy = 21;
+		gbc_lblBisherigeBilderFr.gridy = 23;
 		add(lblBisherigeBilderFr, gbc_lblBisherigeBilderFr);
 
 		btnVisualisierungsbilderLschen = new JButton("L\u00F6schen");
@@ -486,7 +532,7 @@ public class VisCreator extends JPanel{
 		gbc_btnVisualisierungsbilderLschen.fill = GridBagConstraints.HORIZONTAL;
 		gbc_btnVisualisierungsbilderLschen.insets = new Insets(0, 0, 0, 5);
 		gbc_btnVisualisierungsbilderLschen.gridx = 7;
-		gbc_btnVisualisierungsbilderLschen.gridy = 21;
+		gbc_btnVisualisierungsbilderLschen.gridy = 23;
 		add(btnVisualisierungsbilderLschen, gbc_btnVisualisierungsbilderLschen);
 
 		btnVisualisierungsbilderLschen.addActionListener(new ActionListener() {
@@ -526,7 +572,7 @@ public class VisCreator extends JPanel{
 				foundDateRanges.setIcon(loading);
 				foundDateRanges.setText(null);
 				
-				foundEntryNumber.setIcon(loading	);
+				foundEntryNumber.setIcon(loading);
 				foundEntryNumber.setText(null);
 				
 				foundEntries.setText(null);
@@ -568,31 +614,28 @@ public class VisCreator extends JPanel{
 				}
 			}
 		});
-
-		btnCreateTextOutput.addActionListener(new ActionListener() {
-
-			public void actionPerformed(ActionEvent arg0) {
-				int minimum = 4000;
-				String collection = datasetSelectVisualization.getSelectedItem().toString();
-				ArrayList<Date> searchRange = getDates();
-				long trailing = trailingTime(collection);
-				long leading = leadingTime(collection);
-				int[] area = AreaSelect.getSelectedArea();
-				String path = textSpeicherPfad.getText();
-				int count = 0;
-				try {
-					if(collection.equals("rw")) minimum = (int) (Double.valueOf(minimumSet.getText()) * 10);
-					else minimum = (int) (Double.valueOf(minimumSet.getText()) * 100);
-					count = Integer.valueOf(foundEntryNumber.getText());
-				} catch (NumberFormatException  e) {
-					System.out.println("Konvertierung auf Integer fehlgeschlagen");
-				}
-				btnCreateTextOutput.setText(null);
-				btnCreateTextOutput.setIcon(loading);
-				Hauptfenster.feedExecutor(new TextOutputCreationThread(collection, minimum, visDateRanges, entryList, count, path, searchRange, trailing, leading, area));
-				
-			}
-		});
+	}
+	
+	public void getCreatedText(){
+		int minimum = 4000;
+		String collection = datasetSelectVisualization.getSelectedItem().toString();
+		ArrayList<Date> searchRange = getDates();
+		long trailing = trailingTime(collection);
+		long leading = leadingTime(collection);
+		int[] area = AreaSelect.getSelectedArea();
+		String path = textSpeicherPfad.getText();
+		int count = 0;
+		try {
+			if(collection.equals("rw")) minimum = (int) (Double.valueOf(minimumSet.getText()) * 10);
+			else minimum = (int) (Double.valueOf(minimumSet.getText()) * 100);
+			count = Integer.valueOf(foundEntryNumber.getText());
+		} catch (NumberFormatException  e) {
+			System.out.println("Konvertierung auf Integer fehlgeschlagen");
+		}
+		loadingLable.setText(null);
+		loadingLable.setIcon(loading);
+		Hauptfenster.feedExecutor(new TextOutputCreationThread(collection, minimum, visDateRanges, entryList, count, path, searchRange, trailing, leading, area));
+		
 	}
 	
 	public static void changeDate(){
