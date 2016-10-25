@@ -374,6 +374,15 @@ public class VisCreator extends JPanel{
 								}
 							}
 						});
+				
+		loadingLable = new JLabel("");
+		GridBagConstraints gbc_loadingLable = new GridBagConstraints();
+		gbc_loadingLable.fill = GridBagConstraints.BOTH;
+		gbc_loadingLable.gridheight = 2;
+		gbc_loadingLable.insets = new Insets(0, 0, 5, 5);
+		gbc_loadingLable.gridx = 8;
+		gbc_loadingLable.gridy = 12;
+		add(loadingLable, gbc_loadingLable);
 		
 		lblGefundeneberschreitungen = new JLabel("Gefundene \u00DCberschreitungen:");
 		GridBagConstraints gbc_lblGefundeneberschreitungen = new GridBagConstraints();
@@ -412,14 +421,6 @@ public class VisCreator extends JPanel{
 				}	
 			}
 		});
-		
-		loadingLable = new JLabel("");
-		GridBagConstraints gbc_loadingLable = new GridBagConstraints();
-		gbc_loadingLable.fill = GridBagConstraints.BOTH;
-		gbc_loadingLable.insets = new Insets(0, 0, 5, 5);
-		gbc_loadingLable.gridx = 7;
-		gbc_loadingLable.gridy = 14;
-		add(loadingLable, gbc_loadingLable);
 		
 		lblVerzeichnisLoading = new JLabel();
 		GridBagConstraints gbc_lblVerzeichnisLoading = new GridBagConstraints();

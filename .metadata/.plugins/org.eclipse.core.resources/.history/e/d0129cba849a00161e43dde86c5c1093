@@ -231,11 +231,9 @@ public class TextOutputCreationThread implements Runnable {
 		}
 		
 		VisCreator.loadingLable.setIcon(null);
-		System.out.println("hier1");
-		if (VisCreator.btnCreatedVerzeichnisclicked > 0) {
-			System.out.println("hier2");
+		
+		if (VisCreator.btnCreatedVerzeichnisclicked <= 0) {
 			if(VisCreator.btnCreatedVerzeichnisclicked == 1){
-				System.out.println("hier3");
 				Tablesearch tablesearch = new Tablesearch();
 				Hauptfenster.tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
 			}
