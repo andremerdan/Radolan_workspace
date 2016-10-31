@@ -33,6 +33,17 @@ public class VisPreparation {
 
 	private static String PATH = "webpage\\dataImages";
 
+	// Color of Clouds
+	static Color darkBlue = new Color(0, 77, 168);
+	static Color blue = new Color(0, 112, 255);
+	static Color darkViolett = new Color(168, 0, 132);
+	static Color pink = new Color(255, 0, 197);
+	static Color red = new Color(230, 0, 0);
+	static Color darkOrange = new Color(255, 85, 0);
+	static Color orange = new Color(255, 170, 0);
+	static Color yellow = new Color(255, 255, 115);
+	static Color grey = new Color(125, 125, 125);
+	
 	static int min = 100;
 	static int max = 1;
 	/**
@@ -229,28 +240,30 @@ public class VisPreparation {
 					if(value > 0 && value <= 4096){
 						
 						// Color of Clouds
-						
+					
 						if(values[x][y] > 700){
-							g.setColor(new Color(0, 77, 168));
+							g.setColor(darkBlue);
 						}else if(values[x][y] > 600){
-							g.setColor(new Color(0, 112, 255));
+							g.setColor(blue);
 						}else if(values[x][y] > 500){
-							g.setColor(new Color(168, 0, 132));
+							g.setColor(darkViolett);
 						}else if(values[x][y] > 400){
-							g.setColor(new Color(255, 0, 197));
+							g.setColor(pink);
 						}else if(values[x][y] > 300){
-							g.setColor(new Color(230, 0, 0));
+							g.setColor(red);
 						}else if(values[x][y] > 200){
-							g.setColor(new Color(255, 85, 0));
+							g.setColor(darkOrange);
 						}else if(values[x][y] > 100){
-							g.setColor(new Color(255, 170, 0));
+							g.setColor(orange);
 						}else if(values[x][y] > 0){
-							g.setColor(new Color(255, 255, 115));
+							g.setColor(yellow);
 						}
 						
 //						g.setColor(new Color(100 - value, 100 - value, 200 - value));
 						g.fillRect(900 - y - area[1], 900 - x - area[0], 1, 1);
 					}
+				}else if(values[x][y] >= 0.1){
+					g.setColor(grey);
 				}
 			}
 		}

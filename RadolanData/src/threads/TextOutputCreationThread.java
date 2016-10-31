@@ -5,6 +5,8 @@ import gui.Setup;
 import gui.Tablesearch;
 import gui.VisCreator;
 
+import java.awt.Color;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -77,6 +79,12 @@ public class TextOutputCreationThread implements Runnable {
 	}
 
 	public void run() { 
+		
+		if (visDateRanges.isEmpty()) {
+			System.err.println("VisDateRange is Empty");
+			return;
+		}
+		
 		String col[] = {"Zeit","X-Koor.","Y-Koor.","Niederschlag in mm"};
 		model = new DefaultTableModel(col, 0){
 			@Override
@@ -84,9 +92,7 @@ public class TextOutputCreationThread implements Runnable {
 				return false;
 			}
 		};
-		
-		List<Object> data = new ArrayList<>();
-//		data = new Object[810000][4];
+
 
 		StringBuffer buffer = new StringBuffer();
 
@@ -192,8 +198,11 @@ public class TextOutputCreationThread implements Runnable {
 
 			Date time;
 			String dataPath;
+
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 			while(current <= target){
 				time = new Date(current);
+				
 				Calendar cal = Calendar.getInstance();
 				cal.setTime(time);
 				dataPath = collection + "\\" + cal.get(Calendar.YEAR) + "\\" + cal.get(Calendar.MONTH) + "\\Radolan-Data-" + time.toString().replace(":", "-") + "-" + collection + ".txt";
@@ -202,24 +211,20 @@ public class TextOutputCreationThread implements Runnable {
 
 				if(values.equals(null)) continue;
 				buffer.append("\n\tÜberschreitungen bei ");
+			
 				buffer.append(time.toString());
 				for(int x = area[0]; x < area[2]; x++){
 					for(int y = area[1]; y < area[3]; y++){
 						if(values[899 - y][899 - x] >= minimum){
 							buffer.append("\n\t\tStelle (");
 					
-							Object[] objs = {time,(x+1),(y+1), (values[899-y][899-x]/collectionDivision)};
+							Object[] objs = {sdf.format(time),(x+1),(y+1), (values[899-y][899-x]/collectionDivision)};
 							
 							model.addRow(objs);
-//							data.add(new int[] {(x+1),(y+1), (values[899-y][899-x]/collectionDivision)} );
-//							data[b][0] = x+1;
-//							System.out.println(c + " 2 "+data[b][0]);
 							buffer.append(x+1);
 							buffer.append(", ");
-//							data[b][1] = 900-y;
 							buffer.append(900-y);
 							buffer.append(") mit ");
-//							data[b][2] = ((double) values[899-y][899-x]) / collectionDivision;
 							buffer.append(((double) values[899-y][899-x]) / collectionDivision);
 							buffer.append(" mm");
 							b = b + 1;
@@ -231,17 +236,16 @@ public class TextOutputCreationThread implements Runnable {
 		}
 		
 		VisCreator.loadingLable.setIcon(null);
-		System.out.println("hier1");
+		
 		if (VisCreator.btnCreatedVerzeichnisclicked > 0) {
-			System.out.println("hier2");
+			
 			if(VisCreator.btnCreatedVerzeichnisclicked == 1){
-				System.out.println("hier3");
 				Tablesearch tablesearch = new Tablesearch();
 				Hauptfenster.tabbedPane.addTab("Verzeichnis", null, tablesearch, null);
 			}
 			Hauptfenster.tabbedPane.setSelectedIndex(5);
 		}
-		VisCreator.minimumSet.setBackground(null);
+		VisCreator.minimumSet.setBackground(Color.WHITE);
 		DataRead.writeTextOutputFile(buffer, path);
 	}
 }

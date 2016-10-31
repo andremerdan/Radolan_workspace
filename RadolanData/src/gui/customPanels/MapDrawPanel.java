@@ -15,6 +15,7 @@ public class MapDrawPanel extends JPanel{
 
 	private static final long serialVersionUID = 8178102331170228919L;
 	private int[] area = {0, 0, 900, 900};
+	private int[] spot = {0,0};
 	private BufferedImage img;
 
 	@Override
@@ -26,7 +27,13 @@ public class MapDrawPanel extends JPanel{
 		double mod = (double) smaller / (double) 900;
 
 		g.clearRect(0, 0, this.getWidth(), this.getHeight());
-		if(this.img != null) g.drawImage(img, 0, 0, smaller, smaller, null);
+		if(this.img != null){
+			g.drawImage(img, 0, 0, smaller, smaller, null);
+		}
+		
+		g.drawLine((int)((spot[0]-200) * mod), (int) ((spot[1]) * mod), (int) ((spot[0]+200) * mod), (int) (spot[1] * mod));
+		g.drawLine((int)((spot[0]) * mod), (int) ((spot[1]-200) * mod), (int) ((spot[0]) * mod), (int) ((spot[1]+200) * mod));
+		
 		g.drawRect((int) (area[0] * mod), (int) (area[1] * mod), (int) (area[2] * mod) - (int) (area[0] * mod), (int) (area[3] * mod) - (int) (area[1] * mod));
 		g.dispose();
 	}
@@ -48,5 +55,9 @@ public class MapDrawPanel extends JPanel{
 	 */
 	public void updateImage(BufferedImage img){
 		this.img = img;
+	}
+	
+	public void updateSpot(int[] spot){
+		this.spot = spot;
 	}
 }

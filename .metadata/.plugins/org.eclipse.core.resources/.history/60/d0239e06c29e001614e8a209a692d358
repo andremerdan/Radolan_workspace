@@ -1,0 +1,135 @@
+package gui;
+
+import java.awt.Color;
+import java.awt.Component;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.Insets;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.border.LineBorder;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumnModel;
+import javax.swing.table.TableModel;
+
+import com.sun.jersey.core.impl.provider.entity.XMLJAXBElementProvider.Text;
+
+import gui.customPanels.MapDrawPanel;
+import threads.TextOutputCreationThread;
+import javax.swing.ScrollPaneConstants;
+
+public class Tablesearch extends JPanel{
+	
+	private MapDrawPanel drawPanel;
+	private static int[] spot = {0, 0}; 
+	private JTable table_1;
+
+	public Tablesearch(){
+		
+		GridBagLayout gridBagLayout = new GridBagLayout();
+		gridBagLayout.columnWidths = new int[]{0, 0, 0, 0, 0, 0};
+		gridBagLayout.rowHeights = new int[]{0, 0, 0, 0, 0, 0};
+		gridBagLayout.columnWeights = new double[]{0.0, 1.0, 1.0, 0.0, 0.0, Double.MIN_VALUE};
+		gridBagLayout.rowWeights = new double[]{1.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+		setLayout(gridBagLayout);
+		
+//		JScrollPane scrollPane_1 = new JScrollPane();
+//		GridBagConstraints gbc_scrollPane_1 = new GridBagConstraints();
+//		gbc_scrollPane_1.gridheight = 6;
+//		gbc_scrollPane_1.insets = new Insets(0, 0, 5, 5);
+//		gbc_scrollPane_1.fill = GridBagConstraints.BOTH;
+//		gbc_scrollPane_1.gridx = 1;
+//		gbc_scrollPane_1.gridy = 0;
+//		add(scrollPane_1, gbc_scrollPane_1);
+//		
+//		table_1 = new JTable();
+//		GridBagConstraints gbc_table_1 = new GridBagConstraints();
+//		gbc_table_1.gridheight = 6;
+//		gbc_table_1.insets = new Insets(0, 0, 0, 5);
+//		gbc_table_1.fill = GridBagConstraints.BOTH;
+//		gbc_table_1.gridx = 2;
+//		gbc_table_1.gridy = 0;
+//		add(table_1, gbc_table_1);
+//
+//		JLabel lblNewLabel = new JLabel("Tabelle");
+//		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
+//		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+//		gbc_lblNewLabel.gridwidth = 3;
+//		gbc_lblNewLabel.insets = new Insets(10, 3, 5, 5);
+//		gbc_lblNewLabel.gridx = 1;
+//		gbc_lblNewLabel.gridy = 1;
+//		add(lblNewLabel, gbc_lblNewLabel);
+
+		drawPanel = new MapDrawPanel();
+		drawPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+		GridBagConstraints gbc_drawPanel = new GridBagConstraints();
+		gbc_drawPanel.gridheight = 19;
+		gbc_drawPanel.insets = new Insets(0, 0, 5, 5);
+		gbc_drawPanel.fill = GridBagConstraints.BOTH;
+		gbc_drawPanel.gridx = 1;
+		gbc_drawPanel.gridy = 0;
+		add(drawPanel, gbc_drawPanel);
+		
+		JTable table = new JTable(TextOutputCreationThread.model);
+		// size of columns
+		TableColumnModel columnModel = table.getColumnModel();
+		columnModel.getColumn(0).setPreferredWidth(20);
+		columnModel.getColumn(1).setPreferredWidth(20);
+		columnModel.getColumn(2).setPreferredWidth(20);
+		columnModel.getColumn(3).setPreferredWidth(20);
+		table.setAutoCreateRowSorter(true);
+		GridBagConstraints gbc_table = new GridBagConstraints();
+//		gbc_table.insets = new Insets(0, 0, 0, 5);
+//		gbc_table.fill = GridBagConstraints.BOTH;
+//		gbc_table.gridx = 2;
+//		gbc_table.gridy = 0;
+		add(table, gbc_table);
+	
+		JScrollPane scrollPane = new JScrollPane(table);
+		GridBagConstraints gbc_scrollPane = new GridBagConstraints();
+		gbc_scrollPane.insets = new Insets(0, 0, 0, 5);
+		gbc_scrollPane.fill = GridBagConstraints.BOTH;
+		gbc_scrollPane.gridx = 2;
+		gbc_scrollPane.gridy = 0;
+		
+		add(scrollPane, gbc_scrollPane);
+		
+		
+		BufferedImage img = null;
+		
+		try {
+			img = ImageIO.read(new File("webpage\\img\\RadolanBearbeitet.png"));
+			drawPanel.updateImage(img);
+		} catch (IOException e) {
+		}
+		
+		table.getSelectionModel().addListSelectionListener(new ListSelectionListener() {
+			
+			@Override
+			public void valueChanged(ListSelectionEvent arg0) {
+				if(table.getSelectedRow() > -1){
+					spot[0] =  (int) table.getValueAt(table.getSelectedRow(), 1);
+					spot[1] =  (int) table.getValueAt(table.getSelectedRow(), 2);
+					System.out.println(spot[0] + "  " + spot[1]);
+					drawPanel.updateSpot(spot);
+					drawPanel.repaint();
+//					System.out.println(table.getValueAt(table.getSelectedRow(), 1).toString());
+				}
+			}
+		});
+	}
+	
+}

@@ -413,14 +413,6 @@ public class VisCreator extends JPanel{
 			}
 		});
 		
-		loadingLable = new JLabel("");
-		GridBagConstraints gbc_loadingLable = new GridBagConstraints();
-		gbc_loadingLable.fill = GridBagConstraints.BOTH;
-		gbc_loadingLable.insets = new Insets(0, 0, 5, 5);
-		gbc_loadingLable.gridx = 7;
-		gbc_loadingLable.gridy = 14;
-		add(loadingLable, gbc_loadingLable);
-		
 		lblVerzeichnisLoading = new JLabel();
 		GridBagConstraints gbc_lblVerzeichnisLoading = new GridBagConstraints();
 		gbc_lblVerzeichnisLoading.insets = new Insets(0, 0, 5, 5);
@@ -445,6 +437,14 @@ public class VisCreator extends JPanel{
 		gbc_foundEntries.gridx = 3;
 		gbc_foundEntries.gridy = 18;
 		add(foundEntries, gbc_foundEntries);
+		
+		loadingLable = new JLabel("");
+		GridBagConstraints gbc_loadingLable = new GridBagConstraints();
+		gbc_loadingLable.fill = GridBagConstraints.BOTH;
+		gbc_loadingLable.insets = new Insets(0, 0, 5, 5);
+		gbc_loadingLable.gridx = 7;
+		gbc_loadingLable.gridy = 18;
+		add(loadingLable, gbc_loadingLable);
 
 		lblVisualisierungsart = new JLabel("Visualisierungsart:");
 		GridBagConstraints gbc_lblVisualisierungsart = new GridBagConstraints();

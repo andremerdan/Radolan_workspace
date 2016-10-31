@@ -12,11 +12,48 @@
 </head>
 <body>
 	<div id="MainArea">
-	<h1>Radolan</h1>
+		<h1>Radolan</h1>
 		<div id="karten" ></div>
 
-		<img alt="legende" src="img/colorlegend.jpeg">
-			
+		<fieldset>
+			<legend>Niederschlag in mm</legend>
+			<table summary="Angaben sind in mm">
+				<tr>
+				<th>0</th>
+					<th>< 1,0</th>
+					<th>bis 10</th>
+					<th>bis 20</th>
+					<th>bis 30</th>
+					<th>bis 40</th>
+					<th>bis 50</th>
+					<th>bis 60</th>
+					<th>bis 70</th>
+					<th>> 70</th>
+				</tr>
+				<tr>
+					<!-- 0 -->
+					<th bgcolor="#ffffff"></th> 
+					<!-- <1,0 -->
+					<th bgcolor="#ffffff"></th>
+					<!-- bis 10 -->
+					<th bgcolor="#FEFE87"></th>
+					<!-- bis 20 -->
+					<th bgcolor="#FFA938"></th>
+					<!-- bis 30 -->
+					<th bgcolor="#FF5221"></th>
+					<!-- bis 40 -->
+					<th bgcolor="#EC0013"></th>
+					<!-- bis 50 -->
+					<th bgcolor="#FF00BF"></th>
+					<!-- bis 60 -->
+					<th bgcolor="#AD007F"></th>
+					<!-- bis 70 -->
+					<th bgcolor="#0473F7"></th>
+					<!-- > 70 -->
+					<th bgcolor="#004FA2"></th>
+				</tr>
+			</table>
+		</fieldset>
 		<div id="mapButtons">
 			<button id="startAnimation" type="button">Animation Start</button>
 			<button id="stopAnimation" type="button">Animation Stop</button>

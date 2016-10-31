@@ -74,7 +74,7 @@ public class AreaSelect extends JPanel{
 		gridBagLayout.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, Double.MIN_VALUE};
 		setLayout(gridBagLayout);
 
-		JLabel lblNewLabel = new JLabel("Bereich Ausw\u00E4hlen");
+		JLabel lblNewLabel = new JLabel("Bereich Auswählen");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
 		gbc_lblNewLabel.gridwidth = 3;
@@ -176,7 +176,7 @@ public class AreaSelect extends JPanel{
 		bundesList.setSize(30, 1);
 		
 		JScrollPane scrollPane = new JScrollPane(bundesList);
-		scrollPane.setBorder(BorderFactory.createTitledBorder("Bundeslaender"));
+		scrollPane.setBorder(BorderFactory.createTitledBorder("Bundesländer"));
 		add(scrollPane, gbc_bundeslandList);
 			
 		bundesList.addListSelectionListener(new ListSelectionListener() {
@@ -289,10 +289,9 @@ public class AreaSelect extends JPanel{
 					break;
 				}
 
-				area1.setText(""+area[0]);
-				area2.setText(""+area[1]);
-				area3.setText(""+area[2]);
-				area4.setText(""+area[3]);
+				areaToText();
+				drawPanel.updateArea(area);
+				drawPanel.repaint();
 			}
 		});
 		

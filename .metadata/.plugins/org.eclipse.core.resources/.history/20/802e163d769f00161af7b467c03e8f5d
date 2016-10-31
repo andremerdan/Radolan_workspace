@@ -1,0 +1,64 @@
+package gui.customPanels;
+
+import java.awt.Graphics;
+import java.awt.image.BufferedImage;
+
+import javax.swing.JPanel;
+
+/**
+ * Used for the graphical component of the area selection tab.
+ * 
+ * @author Patrick Allan Blair
+ *
+ */
+public class MapDrawPanel extends JPanel{
+
+	private static final long serialVersionUID = 8178102331170228919L;
+	private int[] area = {0, 0, 900, 900};
+	private int[] spot = {0,0};
+	private BufferedImage img;
+
+	@Override
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+
+		int smaller = this.getWidth();
+		if(smaller > this.getHeight()) smaller = this.getHeight();
+		double mod = (double) smaller / (double) 900;
+
+		g.clearRect(0, 0, this.getWidth(), this.getHeight());
+		if(this.img != null){
+			g.drawImage(img, 0, 0, smaller, smaller, null);
+		}
+		
+		g.drawLine((int)((spot[0]-200) * mod), (int) ((spot[1] - 200) * mod), (int) ((spot[0]+200) * mod), (int) ((spot[1] + 200) * mod));
+		g.drawLine(spot[0], spot[1]-20, spot[0], spot[1]+20);
+		System.out.println("(int) Spot "+(int) spot[0] +" "+ (int) spot[1]);
+		System.out.println("Spot "+ spot[0] + " " + spot[1]);
+		g.drawRect((int) (area[0] * mod), (int) (area[1] * mod), (int) (area[2] * mod) - (int) (area[0] * mod), (int) (area[3] * mod) - (int) (area[1] * mod));
+		g.dispose();
+	}
+
+
+	/**
+	 * Sets the area variables that are used to draw a bounding box over the background map.
+	 * 
+	 * @param area The area that will be drawn.
+	 */
+	public void updateArea(int[] area){
+		this.area = area;
+	}
+
+	/**
+	 * Sets the image to be used as a background map.
+	 * 
+	 * @param img The image to be used.
+	 */
+	public void updateImage(BufferedImage img){
+		this.img = img;
+	}
+	
+	public void updateSpot(int[] spot){
+		this.spot = spot;
+	}
+}

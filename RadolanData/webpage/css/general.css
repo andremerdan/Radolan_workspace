@@ -48,3 +48,15 @@ hr {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
+
+table, td, tr, th{
+	/*font-family: arial, sans-serif;*/
+	border-collapse: collapse;
+	
+}
+
+th{
+	width: 50px;
+	border: 2px solid #dddddd;
+	padding: 8px;
+}

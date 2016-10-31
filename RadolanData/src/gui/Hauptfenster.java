@@ -157,7 +157,6 @@ public class Hauptfenster extends JFrame implements ActionListener{
 		GifCreator gif = new GifCreator();
 		tabbedPane.addTab("Animation Erstellen", null, gif, null);
 		
-		
 	}
 
 	/**

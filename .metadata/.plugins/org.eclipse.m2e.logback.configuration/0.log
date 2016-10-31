@@ -3207,3 +3207,668 @@ org.eclipse.core.runtime.CoreException: Launch configuration SplashScreen refere
 2016-10-25 09:40:20,943 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
 2016-10-25 09:40:20,949 [Worker-94] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2016-10-25 09:40:20,966 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 09:48:39,751 [Worker-94] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 09:48:39,823 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 09:48:39,870 [Worker-94] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 09:48:39,883 [Worker-94] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:47,511 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:47,551 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:47,560 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:47,569 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:48,964 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:48,967 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:48,974 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:48,978 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:50,042 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:50,044 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:50,051 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:50,054 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:51,201 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:51,208 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:51,212 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:51,217 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:52,411 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:52,413 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:52,430 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:52,445 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:53,513 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:53,516 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:53,519 [Worker-129] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:53,547 [Worker-129] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:54,614 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:54,618 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:54,621 [Worker-127] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:54,626 [Worker-127] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:55,794 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:55,800 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:55,802 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:55,807 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 10:14:56,848 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:56,852 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 10:14:56,854 [Worker-128] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 10:14:56,856 [Worker-128] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 12:30:01,220 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2016-10-25 12:30:12,080 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:30:12,093 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 12:30:12,100 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:30:12,102 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 12:41:15,054 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:41:15,078 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 12:41:15,085 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:41:15,088 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 12:41:22,079 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:41:22,088 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 12:41:22,093 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 12:41:22,096 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 14:31:55,215 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-25 14:56:54,990 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 14:56:55,161 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 14:56:55,167 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 14:56:55,170 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 14:56:55,363 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 14:56:55,367 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 14:56:55,369 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 14:56:55,371 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:27:51,311 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2016-10-25 15:31:02,549 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:31:02,572 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:31:02,605 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:31:02,612 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:31:02,854 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:31:02,857 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:31:02,867 [Worker-16] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:31:02,869 [Worker-16] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:32:28,818 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:32:28,822 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:32:28,828 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:32:28,831 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:34:35,521 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:34:35,525 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:34:35,528 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:34:35,531 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:35:57,628 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:35:57,633 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:35:57,636 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:35:57,638 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:35:58,679 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:35:58,685 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:35:58,687 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:35:58,690 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:38:00,396 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:38:00,399 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:38:00,413 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:38:00,416 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:38:16,092 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:38:16,095 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:38:16,099 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:38:16,102 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:43:51,598 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:43:51,603 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:43:51,622 [Worker-13] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:43:51,625 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:50:22,393 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:50:22,412 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:50:22,418 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:50:22,421 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:52:00,052 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:52:00,059 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:52:00,061 [Worker-22] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:52:00,064 [Worker-22] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:54:22,574 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:54:22,585 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:54:22,589 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:54:22,591 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 15:59:56,614 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:59:56,620 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 15:59:56,624 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 15:59:56,626 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:00:03,440 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:00:03,446 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:00:03,455 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:00:03,459 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:00:06,962 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:00:06,964 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:00:06,966 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:00:06,968 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:09:41,741 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:09:41,828 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:09:41,848 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:09:41,860 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:10:52,018 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:10:52,026 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:10:52,029 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:10:52,038 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:16:32,830 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:16:32,841 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:16:32,844 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:16:32,850 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:18:58,846 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:18:58,854 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:18:58,856 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:18:58,860 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:20:04,768 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:20:04,894 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:20:04,901 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:20:04,910 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:22:34,356 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:22:34,388 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:22:34,391 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:22:34,402 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:23:38,067 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:23:38,080 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:23:38,084 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:23:38,104 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:27:44,153 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:27:44,164 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:27:44,170 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:27:44,180 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:29:49,884 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:29:49,895 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:29:49,898 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:29:49,904 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:35:16,914 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:16,924 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:35:16,927 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:16,932 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:35:52,186 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:52,196 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:35:52,198 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:52,209 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:35:53,259 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:53,268 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:35:53,271 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:53,279 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:35:58,940 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:58,951 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:35:58,966 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:35:58,984 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:37:37,680 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:37:37,695 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:37:37,698 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:37:37,708 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:40:49,794 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:40:49,807 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:40:49,816 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:40:49,825 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:40:59,252 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:40:59,262 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:40:59,264 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:40:59,269 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:41:04,795 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:04,807 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:41:04,811 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:04,819 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:41:11,701 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:11,717 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:41:11,720 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:11,728 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:41:22,028 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:22,041 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:41:22,043 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:22,050 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:41:27,562 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:27,574 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:41:27,576 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:41:27,581 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:42:09,131 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:42:09,147 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:42:09,150 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:42:09,155 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:42:41,328 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:42:41,355 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:42:41,359 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:42:41,367 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:44:14,943 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:44:14,952 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:44:14,955 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:44:14,961 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:44:37,897 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:44:37,908 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:44:37,911 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:44:37,916 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:48:20,801 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:48:20,812 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:48:20,819 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:48:20,845 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:49:47,982 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:49:48,103 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:49:48,107 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:49:48,115 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:51:06,949 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:51:07,000 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:51:07,004 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:51:07,018 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:52:09,982 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:52:09,993 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:52:09,995 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:52:10,002 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:53:12,497 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:53:12,512 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:53:12,527 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:53:12,535 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:54:19,239 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:19,252 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:54:19,257 [Worker-39] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:19,269 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:54:23,168 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:23,176 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:54:23,180 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:23,187 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:54:42,235 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:42,243 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:54:42,245 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:54:42,254 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:56:39,632 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:56:39,651 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:56:39,701 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:56:39,791 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:56:48,966 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:56:48,977 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:56:48,987 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:56:48,995 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:57:10,212 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:57:10,215 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:57:10,219 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:57:10,221 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 16:57:35,335 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:57:35,341 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 16:57:35,348 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 16:57:35,357 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:03:21,808 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:21,824 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:03:21,826 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:21,835 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:03:24,329 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:24,342 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:03:24,344 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:24,356 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:03:40,303 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:40,321 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:03:40,323 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:03:40,336 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:04:01,352 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:04:01,361 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:04:01,363 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:04:01,375 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:04:18,585 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:04:18,596 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:04:18,598 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:04:18,622 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:06:12,215 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:06:12,228 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:06:12,230 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:06:12,246 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:07:10,622 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:10,714 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:07:10,717 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:10,725 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:07:19,579 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:19,588 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:07:19,589 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:19,599 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:07:39,945 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:39,973 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:07:39,988 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:07:40,111 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:08:56,985 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:08:57,010 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:08:57,018 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:08:57,051 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:11:27,064 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:11:27,075 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:11:27,078 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:11:27,088 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:11:37,701 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:11:37,709 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:11:37,711 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:11:37,717 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:15:27,592 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:15:27,610 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:15:27,614 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:15:27,625 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:16:27,194 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:16:27,215 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:16:27,216 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:16:27,226 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:19:28,769 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:19:28,793 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:19:28,796 [Worker-52] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:19:28,811 [Worker-52] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:24:28,293 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:24:28,346 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:24:28,352 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:24:28,363 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:29:20,314 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:29:20,337 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:29:20,343 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:29:20,348 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:31:46,541 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:31:46,554 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:31:46,556 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:31:46,562 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:32:19,137 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:32:19,165 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:32:19,227 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:32:19,342 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:34:10,734 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:34:10,745 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:34:10,748 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:34:10,770 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:35:25,485 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:35:25,511 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:35:25,514 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:35:25,524 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:35:28,832 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:35:28,842 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:35:28,846 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:35:28,858 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:36:32,292 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:36:32,308 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:36:32,320 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:36:32,426 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:38:21,626 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:38:21,641 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:38:21,644 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:38:21,651 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:38:31,983 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:38:32,023 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:38:32,028 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:38:32,047 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:39:27,016 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:39:27,031 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:39:27,039 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:39:27,048 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:40:18,604 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:40:18,627 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:40:18,632 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:40:18,639 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:41:12,234 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:41:12,253 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:41:12,255 [Worker-59] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:41:12,266 [Worker-59] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:41:17,331 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:41:17,346 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:41:17,362 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:41:17,381 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:42:03,879 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:03,924 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:42:03,942 [Worker-53] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:04,100 [Worker-53] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:42:54,752 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:54,769 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:42:54,773 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:54,777 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:42:56,479 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:56,513 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:42:56,520 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:42:56,530 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:44:18,182 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:44:18,203 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:44:18,220 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:44:18,228 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:46:00,933 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:46:01,025 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:46:01,028 [Worker-54] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:46:01,033 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:47:10,940 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:47:10,955 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:47:10,960 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:47:10,965 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-25 17:48:00,155 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:48:00,171 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-25 17:48:00,174 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-25 17:48:00,192 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 14:22:16,139 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2016-10-30 14:22:29,124 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 14:22:29,136 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 14:22:29,154 [Worker-2] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 14:22:29,158 [Worker-2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 15:30:27,878 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:30:27,901 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 15:30:27,904 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:30:27,906 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 15:31:01,431 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:31:01,464 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 15:31:01,496 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:31:01,501 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 15:33:23,413 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:33:23,420 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 15:33:23,426 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 15:33:23,430 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:13:24,166 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:13:24,204 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:13:24,218 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:13:24,252 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:23:22,395 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:23:22,399 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:23:22,405 [Worker-27] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:23:22,407 [Worker-27] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:30:46,227 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:30:46,297 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:30:46,301 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:30:46,303 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:31:30,867 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:31:30,883 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:31:30,894 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:31:30,897 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:31:33,692 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:31:33,699 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:31:33,706 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:31:33,709 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:32:13,609 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:13,617 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:32:13,620 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:13,623 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:32:18,928 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:18,938 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:32:18,943 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:18,945 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:32:20,904 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:20,913 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:32:20,917 [Worker-42] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:20,928 [Worker-42] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:32:28,948 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:28,979 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:32:28,993 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:32:28,997 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:33:21,276 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:33:21,291 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:33:21,298 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:33:21,304 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:33:58,326 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:33:58,341 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:33:58,358 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:33:58,363 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:34:11,640 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:34:11,649 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:34:11,656 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:34:11,662 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:36:11,616 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:36:11,620 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:36:11,623 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:36:11,626 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:47:03,894 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:03,900 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:47:03,903 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:03,906 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:47:31,665 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:31,668 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:47:31,673 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:31,682 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:47:41,464 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:41,468 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:47:41,477 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:47:41,482 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:52:05,137 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:52:05,155 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:52:05,160 [Worker-48] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:52:05,163 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 16:53:59,537 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:53:59,547 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 16:53:59,562 [Worker-51] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 16:53:59,566 [Worker-51] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:15:44,925 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:15:44,934 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:15:44,944 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:15:44,947 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:21:01,786 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:01,796 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:21:01,800 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:01,803 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:21:12,149 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:12,163 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:21:12,186 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:12,191 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:21:20,223 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:20,256 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:21:20,284 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:21:20,290 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:24:55,978 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:24:56,029 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:24:56,038 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:24:56,051 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:25:54,159 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:25:54,186 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:25:54,200 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:25:54,208 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:28:14,961 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:28:15,002 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:28:15,120 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:28:15,374 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:29:27,251 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:27,289 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:29:27,322 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:27,332 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:29:41,226 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:41,245 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:29:41,250 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:41,269 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:29:57,240 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:57,257 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:29:57,264 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:29:57,272 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:33:15,841 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:33:15,859 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:33:15,864 [Worker-63] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:33:15,871 [Worker-63] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:33:41,637 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:33:41,654 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:33:41,664 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:33:41,667 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:34:36,174 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:34:36,186 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:34:36,190 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:34:36,195 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:38:18,635 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:38:18,745 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:38:18,756 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:38:18,763 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:39:03,944 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:39:03,964 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:39:03,971 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:39:03,977 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:39:18,925 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:39:18,942 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:39:18,956 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:39:18,971 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:40:17,142 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:40:17,187 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:40:17,194 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:40:17,201 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:41:23,312 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:41:23,343 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:41:23,353 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:41:23,364 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:43:02,569 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:43:02,588 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:43:02,590 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:43:02,596 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:46:02,027 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:46:02,062 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:46:02,069 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:46:02,087 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:46:09,139 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:46:09,188 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:46:09,192 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:46:09,202 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:51:55,423 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:51:55,431 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:51:55,433 [Worker-65] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:51:55,442 [Worker-65] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:52:40,374 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:52:40,397 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:52:40,402 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:52:40,410 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:53:43,969 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:53:43,986 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:53:43,989 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:53:44,003 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:54:35,332 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:54:35,370 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:54:35,409 [Worker-70] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:54:35,420 [Worker-70] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:56:08,052 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:56:08,066 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:56:08,075 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:56:08,118 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:57:17,622 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:57:17,633 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:57:17,637 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:57:17,642 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:58:05,821 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:58:05,832 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:58:05,834 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:58:05,841 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 17:58:25,618 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:58:25,626 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 17:58:25,633 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 17:58:25,638 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 18:01:45,147 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:01:45,167 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 18:01:45,185 [Worker-74] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:01:45,228 [Worker-74] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 18:03:16,351 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:03:16,362 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 18:03:16,364 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:03:16,369 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-30 18:04:19,985 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:04:20,001 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-30 18:04:20,006 [Worker-75] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-30 18:04:20,016 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:05:02,426 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2016-10-31 15:05:13,345 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:05:13,354 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:05:13,366 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:05:13,369 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:05:43,643 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:05:43,685 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:05:43,690 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:05:43,693 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:06:33,563 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:06:33,566 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:06:33,584 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:06:33,588 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:20:22,971 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:20:22,998 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:20:23,002 [Worker-15] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:20:23,005 [Worker-15] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:23:07,834 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:23:07,841 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:23:07,847 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:23:07,853 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:24:04,737 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:24:04,742 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:24:04,751 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:24:04,754 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:25:54,714 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:25:54,721 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:25:54,733 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:25:54,736 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:28:06,648 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:28:06,655 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:28:06,665 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:28:06,681 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
+2016-10-31 15:29:35,367 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:29:35,376 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\main\resources
+2016-10-31 15:29:35,388 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-10-31 15:29:35,398 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory \\MAC\Home\Documents\Radolan\workspace\RadolanData\src\test\resources
