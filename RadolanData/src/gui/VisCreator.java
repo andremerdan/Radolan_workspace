@@ -337,44 +337,44 @@ public class VisCreator extends JPanel{
 		gbc_btnTextOrdner.gridy = 11;
 		add(btnTextOrdner, gbc_btnTextOrdner);
 		
-				lblbereinstimmendeZeitbereiche = new JLabel("Gefundene Zeitbereiche:");
-				GridBagConstraints gbc_lblbereinstimmendeZeitbereiche = new GridBagConstraints();
-				gbc_lblbereinstimmendeZeitbereiche.gridwidth = 2;
-				gbc_lblbereinstimmendeZeitbereiche.anchor = GridBagConstraints.EAST;
-				gbc_lblbereinstimmendeZeitbereiche.insets = new Insets(0, 0, 5, 5);
-				gbc_lblbereinstimmendeZeitbereiche.gridx = 1;
-				gbc_lblbereinstimmendeZeitbereiche.gridy = 12;
-				add(lblbereinstimmendeZeitbereiche, gbc_lblbereinstimmendeZeitbereiche);
+		lblbereinstimmendeZeitbereiche = new JLabel("Gefundene Zeitbereiche:");
+		GridBagConstraints gbc_lblbereinstimmendeZeitbereiche = new GridBagConstraints();
+		gbc_lblbereinstimmendeZeitbereiche.gridwidth = 2;
+		gbc_lblbereinstimmendeZeitbereiche.anchor = GridBagConstraints.EAST;
+		gbc_lblbereinstimmendeZeitbereiche.insets = new Insets(0, 0, 5, 5);
+		gbc_lblbereinstimmendeZeitbereiche.gridx = 1;
+		gbc_lblbereinstimmendeZeitbereiche.gridy = 12;
+		add(lblbereinstimmendeZeitbereiche, gbc_lblbereinstimmendeZeitbereiche);
+
 		
-				
-				
-				foundDateRanges = new JLabel("n/a");
-				GridBagConstraints gbc_foundDateRanges = new GridBagConstraints();
-				gbc_foundDateRanges.gridwidth = 2;
-				gbc_foundDateRanges.anchor = GridBagConstraints.WEST;
-				gbc_foundDateRanges.insets = new Insets(0, 0, 5, 5);
-				gbc_foundDateRanges.gridx = 3;
-				gbc_foundDateRanges.gridy = 12;
-				add(foundDateRanges, gbc_foundDateRanges);
 		
-				btnCreateTextOutput = new JButton("Textausgabe");
-				GridBagConstraints gbc_btnCreateTextOutput = new GridBagConstraints();
-				gbc_btnCreateTextOutput.insets = new Insets(0, 0, 5, 5);
-				gbc_btnCreateTextOutput.gridx = 7;
-				gbc_btnCreateTextOutput.gridy = 12;
-				add(btnCreateTextOutput, gbc_btnCreateTextOutput);
-				
-						btnCreateTextOutput.addActionListener(new ActionListener() {
-				
-							public void actionPerformed(ActionEvent arg0) {
-								if (minimumSet.getText().isEmpty()) {
-									minimumSet.setBackground(lightRed);
-								} else {
-									getCreatedText();
-								}
-							}
-						});
+		foundDateRanges = new JLabel("n/a");
+		GridBagConstraints gbc_foundDateRanges = new GridBagConstraints();
+		gbc_foundDateRanges.gridwidth = 2;
+		gbc_foundDateRanges.anchor = GridBagConstraints.WEST;
+		gbc_foundDateRanges.insets = new Insets(0, 0, 5, 5);
+		gbc_foundDateRanges.gridx = 3;
+		gbc_foundDateRanges.gridy = 12;
+		add(foundDateRanges, gbc_foundDateRanges);
+
+		btnCreateTextOutput = new JButton("Textausgabe");
+		GridBagConstraints gbc_btnCreateTextOutput = new GridBagConstraints();
+		gbc_btnCreateTextOutput.insets = new Insets(0, 0, 5, 5);
+		gbc_btnCreateTextOutput.gridx = 7;
+		gbc_btnCreateTextOutput.gridy = 12;
+		add(btnCreateTextOutput, gbc_btnCreateTextOutput);
 		
+				btnCreateTextOutput.addActionListener(new ActionListener() {
+		
+					public void actionPerformed(ActionEvent arg0) {
+						if (minimumSet.getText().isEmpty()) {
+							minimumSet.setBackground(lightRed);
+						} else {
+							getCreatedText();
+						}
+					}
+				});
+
 		lblGefundeneberschreitungen = new JLabel("Gefundene \u00DCberschreitungen:");
 		GridBagConstraints gbc_lblGefundeneberschreitungen = new GridBagConstraints();
 		gbc_lblGefundeneberschreitungen.anchor = GridBagConstraints.EAST;

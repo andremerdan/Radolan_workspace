@@ -185,8 +185,8 @@ public class DataRead {
 		Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(0);
 		cal.set(Integer.valueOf(filename.substring(pointer - 11, pointer - 9)) + 2000, Integer.valueOf(filename.substring(pointer - 9, pointer - 7)) - 1, 
-				Integer.valueOf(filename.substring(pointer - 7, pointer - 5)), Integer.valueOf(filename.substring(pointer - 5, pointer - 3)), 
-				Integer.valueOf(filename.substring(pointer - 3, pointer - 1)), 0);
+			Integer.valueOf(filename.substring(pointer - 7, pointer - 5)), Integer.valueOf(filename.substring(pointer - 5, pointer - 3)), 
+			Integer.valueOf(filename.substring(pointer - 3, pointer - 1)), 0);
 		Date time = cal.getTime();
 
 		if(!overwriteEntry && MongoAccess.checkExistingDataEntries(collection, time)) return;
@@ -349,8 +349,6 @@ public class DataRead {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Path: "+path);
-		System.out.println("Datapath: "+dataPath);
 	}
 
 	/**
