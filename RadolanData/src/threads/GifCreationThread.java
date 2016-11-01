@@ -41,6 +41,7 @@ public class GifCreationThread implements Runnable {
 		String[] gifList = new String[gifDateRange.size()];
 		int pos = 0;
 		
+		GifCreator.setAnimationStatus("Bilder werden erstellt");
 		for(Date time: gifDateRange){
 			if(!GifCreator.getActive()){
 				GifCreator.setCurrentVisFile("n/a");
@@ -50,6 +51,7 @@ public class GifCreationThread implements Runnable {
 			pos++;
 		}
 		
+		GifCreator.setAnimationStatus("GIF wird erstellt");
 		if(!GifCreator.getActive()){
 			GifCreator.setCurrentVisFile("n/a");
 			System.out.println("Fertig");
@@ -57,7 +59,7 @@ public class GifCreationThread implements Runnable {
 		}
 		
 		String path = GifCreator.getGifSavePath() + "\\" + searchDates.get(0).getTime() + "-" + searchDates.get(1).getTime()
-				+ "-" + searchArea[0] + "-" + searchArea[1] + "-" + searchArea[2] + "-" + searchArea[3] + "-gif";
+		+ "-" + searchArea[0] + "-" + searchArea[1] + "-" + searchArea[2] + "-" + searchArea[3] + "-gif";
 		VisPreparation.createGIF(path, gifList, searchArea);
 		GifCreator.setCurrentVisFile("n/a");
 		GifCreator.setActive(false);

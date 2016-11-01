@@ -44,8 +44,6 @@ public class VisPreparation {
 	static Color yellow = new Color(255, 255, 115);
 	static Color grey = new Color(125, 125, 125);
 	
-	static int min = 100;
-	static int max = 1;
 	/**
 	 * Pre-processes the given entry for the chosen glyph type and calls corresponding methods for the actual creation. 
 	 * 
@@ -60,18 +58,18 @@ public class VisPreparation {
 		if(extent > 32) extent = 32;
 
 		switch (glyphType) {
-		case 0:
+			case 0:
 			createDiamondGlyph((int) length, (int) extent, entry.getGlyphName());
 			break;
-		case 1:
+			case 1:
 			createArrowGlyph((int) length / 2, (int) extent / 2, entry.getWindDirection(), entry.getGlyphName());
 			break;
-		case 2:
+			case 2:
 			int minutes = 0;
 			minutes = (int) ((entry.getEndTime().getTime() - entry.getStartTime().getTime()) / 60000);
 			createCrossGlyph(entry.getWindDirection(), entry.getMaxValue(), minutes, entry.getGlyphName());
 			break;
-		default:
+			default:
 			break;
 		}
 	}
@@ -216,8 +214,10 @@ public class VisPreparation {
 		int h = area[3] - area[1];
 		
 		
-		if(w <= 0 || h <= 0) return;
-		BufferedImage bi = new BufferedImage(w, h, BufferedImage.TYPE_INT_ARGB);
+		if(w <= 0 || h <= 0){
+			return;	
+		} 
+		BufferedImage bi = new BufferedImage(900, 900, BufferedImage.TYPE_INT_ARGB);
 
 		System.out.println("Beginning image draw - createPNG");
 		
@@ -227,20 +227,20 @@ public class VisPreparation {
 		// Color around the core of cloud
 		g.setColor(Color.LIGHT_GRAY);
 
-		for(int x = area[0]; x < area[2]; x++){
-			for(int y = area[1]; y < area[3]; y++){
-				if(values[x][y] >= minValue) g.fillRect(900 - y - area[1] - 1, 900 - x - area[0] - 1, 3, 3);
+		for(int x = 0; x < 900; x++){
+			for(int y = 0; y < 900; y++){
+				if(values[x][y] >= minValue) g.fillRect(900 - y - 1, 900 - x - 1, 3, 3);
 			}
 		}
 		int value = 0;
-		for(int x = area[0]; x < area[2]; x++){
-			for(int y = area[1]; y < area[3]; y++){
+		for(int x = 0; x < 900; x++){
+			for(int y = 0; y < 900; y++){
 				if(values[x][y] >= minValue){
 					value = (int) ((100 * (double) values[x][y]) / 4096);
 					if(value > 0 && value <= 4096){
 						
 						// Color of Clouds
-					
+
 						if(values[x][y] > 700){
 							g.setColor(darkBlue);
 						}else if(values[x][y] > 600){
@@ -260,7 +260,7 @@ public class VisPreparation {
 						}
 						
 //						g.setColor(new Color(100 - value, 100 - value, 200 - value));
-						g.fillRect(900 - y - area[1], 900 - x - area[0], 1, 1);
+						g.fillRect(900 - y, 900 - x, 1, 1);
 					}
 				}else if(values[x][y] >= 0.1){
 					g.setColor(grey);
@@ -268,6 +268,8 @@ public class VisPreparation {
 			}
 		}
 		g.dispose();
+
+		bi = bi.getSubimage(area[0], area[1], w, h);
 
 		try {
 			ImageIO.write(bi, "PNG", new File(path));
@@ -324,12 +326,14 @@ public class VisPreparation {
 			mapLayer = new BufferedImage(900, 900, originalMap.getType());  
 			Graphics2D g = mapLayer.createGraphics();  
 			g.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
-					RenderingHints.VALUE_INTERPOLATION_BILINEAR);  
+				RenderingHints.VALUE_INTERPOLATION_BILINEAR);  
 			g.drawImage(originalMap, 0, 0, 900, 900, 0, 0, originalMap.getWidth(), originalMap.getHeight(), null);  
 			g.dispose();  
 
 			System.out.println("Subarea: " + area[0] + " " + area[1] + " to " + area[2] + " " + area[3]);
-			if(area[0] != area[2] && area[1] != area[3]) mapLayer = mapLayer.getSubimage(area[0], area[1], area[2], area[3]);
+			if(area[0] != area[2] - 1 && area[1] != area[3] - 1){
+				mapLayer = mapLayer.getSubimage(area[0], area[1], b, h);
+			}
 			image = ImageIO.read(new File(list[0]));
 
 		} catch (IOException e1) {
@@ -378,7 +382,7 @@ public class VisPreparation {
 		graphicsControlExtensionNode.setAttribute("disposalMethod", "restoreToBackgroundColor");
 		graphicsControlExtensionNode.setAttribute("userInputFlag", "FALSE");
 		graphicsControlExtensionNode.setAttribute("transparentColorFlag", "FALSE");
-		graphicsControlExtensionNode.setAttribute("delayTime", Integer.toString(1500));
+		graphicsControlExtensionNode.setAttribute("delayTime", Integer.toString(250));
 		graphicsControlExtensionNode.setAttribute("transparentColorIndex", "0");
 
 		IIOMetadataNode commentsNode = getNode(root, "CommentExtensions");

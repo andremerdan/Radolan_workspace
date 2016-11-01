@@ -40,7 +40,7 @@ public class TextOutputCreationThread implements Runnable {
 	
 	// JTable Legend
 	public static String[] columnNames = {
-			"Area", "Date", "Value in mm"
+		"Area", "Date", "Value in mm"
 	};
 	public static List<Object> data;
 	int b = 0;
@@ -75,6 +75,19 @@ public class TextOutputCreationThread implements Runnable {
 		this.area = area;
 		if(collection.equals("ry")){
 			collectionDivision = 100;
+		}
+
+		if(area[0] < 0){
+			area[0] = 0;
+		}
+		if(area[1] < 0){
+			area[1] = 0;
+		}
+		if(area[2] >= 900){
+			area[2] = 899;
+		}
+		if(area[3] >= 900){
+			area[3] = 899;
 		}
 	}
 
@@ -211,13 +224,13 @@ public class TextOutputCreationThread implements Runnable {
 
 				if(values.equals(null)) continue;
 				buffer.append("\n\t‹berschreitungen bei ");
-			
+				
 				buffer.append(time.toString());
 				for(int x = area[0]; x < area[2]; x++){
 					for(int y = area[1]; y < area[3]; y++){
 						if(values[899 - y][899 - x] >= minimum){
 							buffer.append("\n\t\tStelle (");
-					
+							
 							Object[] objs = {sdf.format(time),(x+1),(y+1), (values[899-y][899-x]/collectionDivision)};
 							
 							model.addRow(objs);
