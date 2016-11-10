@@ -99,6 +99,7 @@ public class VisShowThread implements Runnable {
 			System.out.println("Starting Browser");
 			Desktop.getDesktop().browse(htmlFile.toURI());
 		} catch (IOException e) {
+			
 			e.printStackTrace();
 		}
 	}
